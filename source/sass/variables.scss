@@ -1,0 +1,26 @@
+//Color
+$color-default-white: #ffffff;
+$gradient-default: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+$background-transparent: transparent;
+
+//Gradients
+
+$top-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+
+//Typography
+$ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$ff-bebas-neue: "Bebas Neue", "Arial", sans-serif;
+
+// Viewports
+// ---------------------------------
+$narrow-vp: "(max-width: 767px)";
+$not-narrow-vp: "(min-width: 768px)";
+$middle-vp: "(min-width: 768px) and (max-width: 1199px)";
+$wide-vp: "(min-width: 1200px)";
+$not-wide-vp: "(max-width: 1199px)";
+
+// Retina
+// ---------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

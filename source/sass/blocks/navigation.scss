@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media #{$narrow-vp} {
+    flex-direction: column;
+  }
+}
+
+.navigation a {
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-default-white;
+  text-decoration: none;
+
+  @media #{$narrow-vp} {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

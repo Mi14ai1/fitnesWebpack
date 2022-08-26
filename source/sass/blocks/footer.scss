@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  background: black;
+
+  @media #{$narrow-vp} {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+}
+
+.footer__social {
+  grid-row: 3 /4;
+}
