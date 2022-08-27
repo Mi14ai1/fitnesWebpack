@@ -12,7 +12,7 @@
     <div class="page__wrapper">
       <header class="page__header header container">
         <div class="header__logo logo">
-          <img src="img/svg/logo.svg" alt="Сайт фитнес-центра Supergym" width="89" height="20px">
+          <img src="img/svg/logo.svg" alt="Сайт фитнес-центра Supergym" width="89" height="20">
         </div>
         <div class="header__phone header-phone">
           <a href="tel:+78005555555">8-800-555-55-55</a>
@@ -76,15 +76,84 @@
                 <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
               </div>
               <div class="presentation__description presentation-description presentation-description--not-wide-hidden">
-                <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;<nobr>кардио-зона</nobr> с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+                <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
               </div>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                type="image/webp"
+                srcset="
+                  img/presentation/gym-l.webp 1x,
+                  img/presentation/gym-l@2x.webp 2x"/>
+              <source
+                media="(min-width: 768px) and (max-width: 1200px)"
+                type="image/webp"
+                srcset="
+                  img/presentation/gym-m.webp 1x,
+                  img/presentation/gym-m@2x.webp 2x"/>
+              <source
+                media="(max-width: 767px)"
+                type="image/webp"
+                srcset="
+                  img/presentation/gym-s.webp 1x,
+                  img/presentation/gym-s@2x.webp 2x"/>
+              <!--mobile-1x: 320px-->
+              <!--mobile-2x: 640px-->
+              <!--tablet-1x: 678px-->
+              <!--tablet-2x: 1356px-->
+              <!--desktop-1x: 660px-->
+              <!--desktop-2x: 1220px-->
+              <img
+                loading="lazy"
+                srcset="img/presentation/gym-l@2x.jpg 2x"
+                src="img/presentation/gym-l.jpg"
+                alt="Тренажерный зал Supergym"
+                width="660"
+                height="401"/>
+            </picture>
+            <div class="presentation__video">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="
+                    img/presentation/preview/video-preview-l.webp 1x,
+                    img/presentation/preview/video-preview-l@2x.webp 2x"/>
+                <source
+                  media="(min-width: 768px) and (max-width: 1200px)"
+                  type="image/webp"
+                  srcset="
+                    img/presentation/preview/video-preview-m.webp 1x,
+                    img/presentation/preview/video-preview-m@2x.webp 2x"/>
+                <source
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  srcset="
+                    img/presentation/preview/video-preview-s.webp 1x,
+                    img/presentation/preview/video-preview-s@2x.webp 2x"/>
+                <!--mobile-1x: 320px-->
+                <!--mobile-2x: 640px-->
+                <!--tablet-1x: 266px-->
+                <!--tablet-2x: 532px-->
+                <!--desktop-1x: 364px-->
+                <!--desktop-2x: 728px-->
+                <img
+                  loading="lazy"
+                  srcset="img/presentation/preview/video-preview-l@2x.jpg 2x"
+                  src="img/presentation/preview/video-preview-l.jpg"
+                  alt="Тренажерный зал Supergym"
+                  width="660"
+                  height="401"/>
+              </picture>
+              <button class="button presentation__video-play"><span class="visually-hidden">Проиграть видео</span></button>
             </div>
           </div>
         </section>
       </main>
       <footer class="page__footer container footer">
-        <div class="header__logo logo">
-          <img src="img/svg/logo.svg" alt="Сайт фитнес-центра Supergym" width="89" height="20px">
+        <div class="footer__logo logo">
+          <img src="img/svg/logo.svg" alt="Сайт фитнес-центра Supergym" width="89" height="20">
         </div>
           <ul class="navigation footer__navigation">
             <li>
