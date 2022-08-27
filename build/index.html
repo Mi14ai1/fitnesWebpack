@@ -2,8 +2,8 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Описание проекта">
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -19,6 +19,42 @@
         </div>
       </header>
       <main class="page__main">
+        <h1 class="visually-hidden">Главная страница Supergym</h1>
+        <section class="banner">
+          <div class="container container--banner">
+            <div class="banner-text banner__text">
+              <span>Омск</span>
+              <h2>Фитнес центр</h2>
+              <p>Тренажёрный зал Групповые занятия Кардио-зона </p>
+              <a href="#" class="button">Купить абонемент</a>
+            </div>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              type="image/webp"
+              srcset="
+                img/banner/banner-l.webp 1x,
+                img/banner/banner-l@2x.webp 2x"/>
+            <source
+              media="(min-width: 768px) and (max-width: 1200px)"
+              type="image/webp"
+              srcset="
+                img/banner/banner-m.webp 1x,
+                img/banner/banner-m@2x.webp 2x"/>
+            <!--tablet-1x: 324px-->
+            <!--tablet-2x: 648px-->
+            <!--desktop-1x: 500px-->
+            <!--desktop-2x: 1000px-->
+            <img
+              loading="lazy"
+              srcset="img/banner/banner-l@2x.jpg 2x"
+              src="img/banner/banner-l.jpg"
+              alt="Комплектующие для светотехники"
+              width="500"
+              height="556"/>
+          </picture>
+        </section>
       </main>
       <footer class="page__footer container footer">
         <div class="header__logo logo">
@@ -30,11 +66,11 @@
             </li>
             <li>
               <a href="#">Абонементы</a>
-            </li>            
+            </li>
           </ul>
           <ul class="navigation footer__navigation">
             <li>
-              <a href="#">Акции</a>              
+              <a href="#">Акции</a>
             </li>
             <li>
               <a href="#">Тренеры</a>

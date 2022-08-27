@@ -569,8 +569,8 @@ template {
 @media (hover: hover), screen and (min-width: 0\0) {
   .button:hover,
   .button:focus {
-    background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     opacity: 0.8;
   }
 }
