@@ -1,6 +1,7 @@
 .header-phone {
   margin-left: auto;
 }
+
 .header-phone a {
   font-family: $ff-bebas-neue;
   font-size: 26px;
@@ -19,7 +20,7 @@
     line-height: 24px;
     letter-spacing: 0.02em;
   }
-  
+
   @media #{$narrow-vp} {
     font-size: 20px;
     line-height: 20px;

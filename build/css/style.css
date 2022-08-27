@@ -448,6 +448,20 @@ template {
   padding: 30px 90px 35px 30px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
 .page__wrapper {
   position: relative;
   display: -webkit-box;
@@ -499,8 +513,10 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: black;
+  background: transparent;
   padding: 30px 0 30px 2px;
+  margin-bottom: -86px;
+  z-index: 1;
 }
 
 .header-phone {
@@ -521,7 +537,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: black;
+  background: transparent;
 }
 
 .footer__social {
@@ -559,6 +575,139 @@ template {
   display: block;
 }
 
+.top-screen {
+  padding-top: 51px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+
+.top-screen__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-screen a,
+.top-screen p,
+.top-screen span,
+.top-screen h2 {
+  margin: 0;
+  text-align: right;
+}
+
+.top-screen a {
+  grid-column: 2 / -1;
+  justify-self: flex-start;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.top-screen span {
+  grid-column: 1 / -1;
+  display: inline-block;
+  width: 100%;
+  vertical-align: baseline;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 59px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.top-screen h2,
+.top-screen .top-screen__title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  -webkit-text-stroke: 2px #ffffff;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.top-screen p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  max-width: 114px;
+}
+
+.top-screen h2 {
+  grid-column: 1 / -1;
+}
+
+.top-screen .top-screen__title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.top-screen__text {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 169px 1fr;
+  grid-template-columns: 169px 1fr;
+  justify-items: flex-end;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  width: 400px;
+  padding-top: 100px;
+  padding-right: 63px;
+}
+
+.top-screen img {
+  max-width: 500;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.top-screen-socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-screen-socials a {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.section-title h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -588,6 +737,10 @@ template {
 @media (max-width: 1199px) {
   .header-phone a {
     letter-spacing: 0.02em;
+  }
+
+  .top-screen-socials {
+    display: none;
   }
 }
 
@@ -636,6 +789,11 @@ template {
     font-size: 16px;
     line-height: 19px;
   }
+
+  .section-title h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -668,5 +826,10 @@ template {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
+  }
+
+  .section-title h2 {
+    font-size: 42px;
+    line-height: 42px;
   }
 }

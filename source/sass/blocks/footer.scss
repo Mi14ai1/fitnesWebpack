@@ -1,10 +1,10 @@
 .footer {
   display: flex;
-  background: black;
+  background: transparent;
 
   @media #{$narrow-vp} {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
