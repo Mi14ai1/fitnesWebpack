@@ -4,7 +4,8 @@ $gradient-default: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $play-button-gradient: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 $background-transparent: transparent;
 $color-blue-zodiac: #102654;
-$color-video-fade: #14367a;
+$color-video-fade: rgba(20, 54, 122, 0.5);
+$color-white-lilac: #f8f9fc;
 
 
 //Gradients
@@ -32,3 +33,4 @@ $retina-dppx: 1.5dppx;
 //variables
 $header-height: 86px;
 $section-title-color: $color-blue-zodiac;
+$section-background-color: $color-white-lilac;
