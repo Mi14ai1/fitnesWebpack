@@ -1,0 +1,11 @@
+.presentation iframe {
+  border: 0;
+}
+
+.presentation__grid {
+  display: flex;
+
+  @media #{$not-wide-vp} {
+    flex-direction: column;
+  }
+}
