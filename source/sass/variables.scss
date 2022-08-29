@@ -6,7 +6,11 @@ $background-transparent: transparent;
 $color-blue-zodiac: #102654;
 $color-video-fade: rgba(20, 54, 122, 0.5);
 $color-white-lilac: #f8f9fc;
-
+$color-blue-zodiac-transparent: rgba(16, 38, 84, 0.5);
+$color-boulder: #787878;
+$color-razzmatazz: #d10a42;
+$color-blue-bayoux: #495a7d;
+$color-torea-bay: #103aae;
 
 //Gradients
 
@@ -34,3 +38,10 @@ $retina-dppx: 1.5dppx;
 $header-height: 86px;
 $section-title-color: $color-blue-zodiac;
 $section-background-color: $color-white-lilac;
+$tab-button-color: $color-blue-zodiac-transparent;
+$tab-button-active-color: $color-blue-zodiac;
+$tab-control-active-color: $color-razzmatazz;
+$tab-navigation-indicator-color: $color-boulder;
+$subscription-price-color: $color-torea-bay;
+$subscription-price-shadow-price-color: rgba(232, 232, 232, 0.48);
+$subscription-border-gradient: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);

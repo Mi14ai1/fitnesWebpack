@@ -802,6 +802,155 @@ template {
   border-left: 14px solid #ffffff;
 }
 
+.subscription {
+  background: #f8f9fc;
+}
+
+.subscription h2 {
+  text-align: center;
+}
+
+.subscription__controls-list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+  max-width: 341px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  -webkit-box-shadow: 0 2px 0 0 #787878;
+  box-shadow: 0 2px 0 0 #787878;
+}
+
+.subscription__controls-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.subscription__controls-item--active {
+  -webkit-box-shadow: 0 2px 0 0 #d10a42;
+  box-shadow: 0 2px 0 0 #d10a42;
+}
+
+.subscription-tabs__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgba(16, 38, 84, 0.5);
+  padding: 0;
+}
+
+.subscription-tabs__button--active {
+  color: #102654;
+}
+
+.subscription-tabs__button:hover {
+  background: none;
+  color: #102654;
+}
+
+.subscription-card {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 360px;
+  min-height: 448px;
+  background-color: #ffffff;
+  border: solid 7px #ffffff;
+}
+
+.subscription-card dd,
+.subscription-card dt {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.subscription-card dt {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #102654;
+}
+
+.subscription-card dd {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #495a7d;
+}
+
+.subscription-card__currency {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  text-align: center;
+}
+
+.subscription-card span {
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #103aae;
+}
+
+.subscription-card span::after {
+  content: attr(data-subscription-price);
+  position: absolute;
+  font-size: 100px;
+  line-height: 150px;
+  font-weight: 700;
+  color: rgba(232, 232, 232, 0.48);
+  left: 0;
+  top: 0;
+}
+
+.subscription-card .subscription-card__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #102654;
+  -webkit-box-shadow: inset 0 0 0 2px #102654;
+  box-shadow: inset 0 0 0 2px #102654;
+}
+
+.subscription-card:hover {
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.subscription-card:hover .subscription-card__button {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
+}
+
+.subscription-card__description-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tab-content__cards-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -812,9 +961,11 @@ template {
 @media (hover: hover), screen and (min-width: 0\0) {
   .button:hover,
   .button:focus {
-    background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
-    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     opacity: 0.8;
+  }
+
+  .button:active {
+    opacity: 0.3;
   }
 }
 
