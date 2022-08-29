@@ -61,4 +61,16 @@
   &--header-show-modal {
     padding: 30px 90px 35px 30px;
   }
+
+  &--competition {
+    padding: 0;
+
+    @media #{$middle-vp} {
+      padding: 0;
+    }
+
+    @media #{$narrow-vp} {
+      padding: 0;
+    }
+  }
 }
