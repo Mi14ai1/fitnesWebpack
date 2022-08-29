@@ -155,6 +155,65 @@
             </div>
           </div>
         </section>
+        <section class="subscription">
+          <div class="container subscription-tabs section-title">
+            <h2>Абонементы</h2>
+            <ul class="subscription__controls-list">
+              <li class="subscription__controls-item subscription__controls-item--active">
+                <button class="button subscription-tabs__button subscription-tabs__button--active">1 месяц</button>
+              </li>
+              <li class="subscription__controls-item">
+                <button class="button subscription-tabs__button">6 месяц</button>
+              </li>
+              <li class="subscription__controls-item">
+                <button class="button subscription-tabs__button">12 месяц</button>
+              </li>
+            </ul>
+            <div class="subscription-tabs__content tab-content">
+              <ul class="tab-content__cards-list">
+                <li class="tab-content__cards-item">
+                  <div class="subscription-card">
+                    <dl class="subscription-card__description-list">
+                      <dt>С&nbsp;тренером</dt>
+                      <dd>12&nbsp;занятий</dd>
+                    </dl>
+                    <div class="subscription-card__currency">
+                      <span data-subscription-price="5000">5000</span>
+                      <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
+                    </div>
+                    <a href="#" class="button subscription-card__button">купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              type="image/webp"
+              srcset="
+                img/subscription/plates-l.webp 1x,
+                img/subscription/plates-l@2x.webp 2x"/>
+            <source
+              media="(min-width: 768px) and (max-width: 1200px)"
+              type="image/webp"
+              srcset="
+                img/subscription/plates-m.webp 1x,
+                img/subscription/plates-m@2x.webp 2x"/>
+            <!--mobile-2x: 694px-->
+            <!--tablet-1x: 347px-->
+            <!--tablet-2x: 532px-->
+            <!--desktop-1x: 287px-->
+            <!--desktop-2x: 574px-->
+            <img
+              loading="lazy"
+              srcset="img/subscription/plates-l@2x.png 2x"
+              src="img/subscription/plates-l.png"
+              alt="лучшие аксессуары"
+              width="287"
+              height="494"/>
+          </picture>
+        </section>
       </main>
       <footer class="page__footer container footer">
         <div class="footer__logo logo">
