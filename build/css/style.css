@@ -683,8 +683,8 @@ template {
   padding: 30px 90px 35px 30px;
 }
 
-.container--header-show-modal {
-  padding: 30px 90px 35px 30px;
+.container--coaches {
+  max-width: 1272px;
 }
 
 .container--competition {
@@ -1353,10 +1353,94 @@ template {
 }
 
 .coaches-slider {
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 56px;
+}
+
+.coaches-slider__button {
+  position: absolute;
+  top: 50%;
+  width: 23px;
+  height: 23px;
+  z-index: 10;
+  padding: 5px;
+}
+
+.coaches-slider__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border-color: #102654;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.coaches-slider__next {
+  right: 0;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.coaches-slider__prev {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.coaches-card {
+  position: relative;
+  max-width: 260px;
+  height: 294px;
+  width: 100%;
+}
+
+.coaches-card img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.coaches-card p {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.coaches-card__info {
+  position: relative;
+  height: 100%;
+  background: rgba(16, 38, 84, 0.89);
+  overflow-y: auto;
+  z-index: 1;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 38, 84, 0.89);
+}
+
+.coaches-card__info::-webkit-scrollbar {
+  width: 3px;
+}
+
+.coaches-card__info::-webkit-scrollbar-track {
+  background: rgba(16, 38, 84, 0.89);
+}
+
+.coaches-card__info::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #d10a42;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1424,6 +1508,10 @@ template {
 
   .container--header {
     padding: 15px 29px 20px 26px;
+  }
+
+  .container--coaches {
+    padding: 0;
   }
 
   .container--competition {
@@ -1495,6 +1583,10 @@ template {
 
   .container--header {
     padding: 20px 64px 25px 50px;
+  }
+
+  .container--coaches {
+    padding: 0;
   }
 
   .container--competition {
