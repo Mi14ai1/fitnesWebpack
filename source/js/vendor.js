@@ -2,12 +2,24 @@
 import Swiper from './vendor/swiper-bundle';
 
 let swiper = new Swiper('.coaches-slider__swiper', {
-  slidesPerView: 4,
-  spaceBetween: 40,
-  freeMode: true,
+  loop: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  slidesPerView: 'auto',
   navigation: {
     nextEl: '.coaches-slider__next',
     prevEl: '.coaches-slider__prev',
+  },
+  breakpoints: {
+    640: {
+      centeredSlides: false,
+      spaceBetween: 30,
+    },
+
+    1200: {
+      centeredSlides: false,
+      spaceBetween: 40,
+    },
   },
 });
 

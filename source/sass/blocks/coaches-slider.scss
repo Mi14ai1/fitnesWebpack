@@ -1,10 +1,26 @@
 .coaches-slider {
+  box-sizing: border-box;
   position: relative;
   user-select: none;
   width: 100%;
   height: 100%;
   padding: 0 56px;
 
+  &__slide {
+    min-width: 0;
+    width: 260px;
+    height: 294px;
+
+    @media #{$middle-vp} {
+      width: 268px;
+      height: 294px;
+    }
+
+    @media #{$narrow-vp} {
+      width: 226px;
+      height: 274px;
+    }
+  }
 
   &__button {
     box-sizing: border-box;
@@ -45,5 +61,13 @@
       transform-origin: top left;
       transform: rotate(45deg) translate(-50%, -50%);
     }
+  }
+
+  @media #{$middle-vp} {
+    //max-width: 678px;
+  }
+
+  @media #{$narrow-vp} {
+    max-width: 610px;
   }
 }
