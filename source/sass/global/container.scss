@@ -5,7 +5,7 @@
   margin: 0 auto;
 
   @media #{$middle-vp} {
-    padding: 0 50px;
+    padding: 0 45px;
   }
 
   @media #{$narrow-vp} {
@@ -60,14 +60,6 @@
 
   &--coaches {
     max-width: 1272px;
-
-    @media #{$middle-vp} {
-      padding: 0;
-    }
-
-    @media #{$narrow-vp} {
-      padding: 0;
-    }
   }
 
   &--competition {

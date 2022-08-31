@@ -1,8 +1,7 @@
 .coaches-card {
   position: relative;
-  max-width: 260px;
+  width: 260px;
   height: 294px;
-  width: 100%;
 
   img {
     position: absolute;
@@ -42,4 +41,14 @@
       background-color: $color-razzmatazz;
     }
   }
+
+  @media #{$middle-vp} {
+    width: 268px;
+  }
+
+  @media #{$narrow-vp} {
+    width: 226px;
+    height: 274px;
+  }
+  margin: 0;
 }
