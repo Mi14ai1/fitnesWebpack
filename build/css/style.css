@@ -1364,38 +1364,53 @@ template {
 }
 
 .coaches-slider__button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
-  width: 23px;
-  height: 23px;
+  width: 37px;
+  height: 37px;
   z-index: 10;
-  padding: 5px;
+  padding: 10px;
 }
 
 .coaches-slider__button::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
   width: 23px;
   height: 23px;
-  border-color: #102654;
   border-left: 1px solid;
   border-bottom: 1px solid;
+  border-color: #afafaf;
 }
 
 .coaches-slider__next {
   right: 0;
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+}
+
+.coaches-slider__next::before {
+  right: 50%;
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transform: rotate(225deg) translate(50%, -50%);
+  -ms-transform: rotate(225deg) translate(50%, -50%);
+  transform: rotate(225deg) translate(50%, -50%);
 }
 
 .coaches-slider__prev {
   left: 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+}
+
+.coaches-slider__prev::before {
+  left: 50%;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  -ms-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%);
 }
 
 .coaches-card {
