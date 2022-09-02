@@ -1,0 +1,41 @@
+.promo-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  border: 7px solid;
+  border-image: $border-gradient;
+  border-image-slice: 1;
+
+  dl {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  dt,
+  dd,
+  a {
+    font-family: $ff-roboto-condensed;
+    color: $color-biscay;
+    margin: 0;
+  }
+
+  dt {
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+
+  dd {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

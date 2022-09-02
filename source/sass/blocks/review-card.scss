@@ -1,0 +1,32 @@
+.review-card {
+  display: flex;
+  background: $review-background-color;
+
+  dl {
+    margin: 0;
+  }
+
+  dd,
+  dt {
+    font-family: $ff-roboto-condensed;
+    color: $color-default-white;
+    margin: 0;
+  }
+
+  dt {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  dd {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+
+  img {
+    border-radius: 50%;
+  }
+}

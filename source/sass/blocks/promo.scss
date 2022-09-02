@@ -1,0 +1,19 @@
+.promo__content {
+  display: flex;
+  align-items: flex-start;
+
+  @media #{$not-wide-vp} {
+    flex-direction: column;
+  }
+}
+
+.promo__cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  @media #{$not-wide-vp} {
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    width: 100%;
+  }
+}
