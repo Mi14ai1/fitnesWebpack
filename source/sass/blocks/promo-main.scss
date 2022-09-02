@@ -1,0 +1,53 @@
+.promo-main {
+  display: flex;
+  max-width: 560px;
+  background: $color-red-ribbon;
+
+  dl {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  dt,
+  dd,
+  a {
+    font-family: $ff-roboto-condensed;
+    color: $color-default-white;
+    margin: 0;
+  }
+
+  dt {
+    font-size: 28px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+
+  &__price {
+    font-size: 70px;
+    line-height: 109px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  @media #{$narrow-vp} {
+    flex-direction: column;
+  }
+}
+
+.promo-main__text {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 45px;
+}
