@@ -1,45 +1,17 @@
 .subscription {
+  padding-top: 119px;
+  padding-bottom: 120px;
   background: $section-background-color;
 }
 
 .subscription h2 {
   text-align: center;
+  margin-bottom: 24px;
 }
 
-.subscription__controls-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
-  max-width: 341px;
-  width: fit-content;
-  padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  box-shadow: 0 2px 0 0 $tab-navigation-indicator-color;
-}
-
-.subscription__controls-item {
-  width: fit-content;
-
-  &--active {
-    box-shadow: 0 2px 0 0 $tab-control-active-color;
-  }
-}
-
-.subscription-tabs__button {
-  font-family: $ff-roboto-condensed;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $tab-button-color;
-
-  padding: 0;
-
-  &--active {
-    color: $tab-button-active-color;
-  }
-
-  &:hover {
-    background: none;
-    color: $tab-button-active-color;
-  }
+.subscription__plates {
+  position: absolute;
+  right: -103px;
+  bottom: -274px;
+  z-index: 1;
 }

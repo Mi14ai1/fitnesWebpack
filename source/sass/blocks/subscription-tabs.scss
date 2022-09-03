@@ -1,0 +1,57 @@
+.subscription-tabs {
+  position: relative;
+  z-index: 5;
+}
+
+.subscription-tabs__controls-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+  max-width: 341px;
+  width: 100%;
+  padding: 0 0 1px;
+  margin: 0 auto;
+  list-style: none;
+  box-shadow: 0 2px 0 0 $tab-navigation-indicator-color;
+}
+
+.subscription-tabs__controls-item {
+  position: relative;
+  width: fit-content;
+
+  &--active::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: -3px;
+    width: calc(100% + 1px);
+    height: 2px;
+    background: $tab-control-active-color;
+  }
+
+  &:last-child {
+    justify-self: flex-end;
+  }
+}
+
+.subscription-tabs__button {
+  font-family: $ff-roboto-condensed;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $tab-button-color;
+
+  padding: 0;
+
+  &--active {
+    color: $tab-button-active-color;
+  }
+
+  &:hover {
+    background: none;
+    color: $tab-button-active-color;
+  }
+}
+
+.subscription-tabs__content {
+  padding-top: 40px;
+}
