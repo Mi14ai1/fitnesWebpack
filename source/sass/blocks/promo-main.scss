@@ -2,6 +2,7 @@
   display: flex;
   max-width: 560px;
   background: $color-red-ribbon;
+  margin-right: 40px;
 
   dl {
     flex-grow: 1;
@@ -20,6 +21,7 @@
     font-size: 28px;
     line-height: 44px;
     font-weight: 700;
+    margin-bottom: -25px;
   }
 
   &__price {
@@ -39,6 +41,8 @@
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-underline-offset: 4px;
   }
 
   @media #{$narrow-vp} {
@@ -49,5 +53,5 @@
 .promo-main__text {
   display: flex;
   flex-direction: column;
-  padding: 50px 45px;
+  padding: 33px 45px 46px;
 }

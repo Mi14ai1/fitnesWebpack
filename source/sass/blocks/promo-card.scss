@@ -2,10 +2,12 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 19px 28px 30px;
   border: 7px solid;
   border-image: $border-gradient;
   border-image-slice: 1;
+
+  min-height: 211px;
 
   dl {
     flex-grow: 1;
@@ -24,6 +26,7 @@
     font-size: 26px;
     line-height: 38px;
     font-weight: 700;
+    margin-bottom: 3px;
   }
 
   dd {
@@ -36,6 +39,8 @@
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
+    letter-spacing: 0.7px;
     text-transform: uppercase;
+    text-underline-offset: 4px;
   }
 }
