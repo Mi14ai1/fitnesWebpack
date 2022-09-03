@@ -6,6 +6,8 @@
   letter-spacing: 0.03em;
   color: $section-title-color;
 
+  margin: 0;
+
   @media #{$middle-vp} {
     font-size: 42px;
     line-height: 42px;

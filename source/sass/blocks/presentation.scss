@@ -4,6 +4,9 @@
 
 .presentation__grid {
   display: flex;
+  padding-top: 120px;
+  padding-left: 60px;
+  padding-bottom: 120px;
 
   @media #{$not-wide-vp} {
     flex-direction: column;

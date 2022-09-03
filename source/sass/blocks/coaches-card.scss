@@ -18,9 +18,62 @@
     z-index: 1;
   }
 
+  dl {
+    margin: 0 0 32px;
+    width: fit-content;
+  }
+
+  dt {
+    font-family: $ff-roboto-condensed;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    color: $color-default-white;
+    margin: 0;
+  }
+
+  dd {
+    font-family: $ff-roboto-condensed;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $sport-text-color;
+    text-align: center;
+    margin: -3px 0 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    font-family: $ff-roboto-condensed;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $color-default-white;
+    padding-left: 14px;
+    margin-bottom: 13px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -2px;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background: $color-default-white;
+    }
+  }
+
   &__info {
     position: relative;
     height: 100%;
+    padding: 52px 20px 20px 57px;
     background: $coaches-info-background-color;
     overflow-y: auto;
     z-index: 1;
@@ -52,3 +105,4 @@
   }
   margin: 0;
 }
+

@@ -1,0 +1,11 @@
+.connection {
+  display: flex;
+
+  &__wrapper {
+    flex-grow: 1;
+  }
+
+  @media #{$not-wide-vp} {
+    flex-direction: column;
+  }
+}
