@@ -1,10 +1,14 @@
 .footer {
-  display: flex;
-  background: transparent;
+  background: #030a1a;
+  min-height: 108px;
 
-  @media #{$narrow-vp} {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  &__content {
+    display: flex;
+
+    @media #{$narrow-vp} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 

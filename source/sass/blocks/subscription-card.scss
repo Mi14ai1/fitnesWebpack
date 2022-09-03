@@ -105,6 +105,12 @@
   }
 }
 
+.advantages-card.advantages-card--experience-indent {
+  dl {
+    column-gap: 32px;
+  }
+}
+
 .subscription-card__description-list {
   padding: 0;
   margin: 0;

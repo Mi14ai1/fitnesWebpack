@@ -1,7 +1,7 @@
 .advantages-card {
   dl {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
     max-width: 340px;
     margin: 0;
   }
@@ -12,6 +12,13 @@
     line-height: 33px;
     color: $color-blue-zodiac;
     font-weight: 700;
+  }
+
+  &:not(&--main) {
+    dt {
+      margin-top: -7px;
+      margin-bottom: 3px;
+    }
   }
 
   dd {
@@ -37,6 +44,15 @@
     margin: 0;
     background: $advantages-gradient;
     background-clip: text;
+
+    margin-top: -28px;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -21px;
+    padding-left: 1px;
   }
 
   &__definition {
@@ -48,7 +64,11 @@
   }
 
   &--main {
+    box-sizing: border-box;
+    padding: 35px 15px 20px;
     background: $advantages-main-card-background-color;
+
+    height: 100%;
 
     dt,
     dd {
@@ -63,6 +83,7 @@
       font-size: 26px;
       line-height: 39px;
       font-weight: 700;
+      margin-bottom: 32px;
     }
 
     .advantages-card__definition {
@@ -70,6 +91,9 @@
       font-size: 74px;
       line-height: 111px;
       font-weight: 700;
+
+      padding-right: 4px;
+      margin-bottom: -16px;
     }
 
     .advantages-card__description {

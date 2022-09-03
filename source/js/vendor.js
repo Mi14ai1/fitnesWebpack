@@ -7,8 +7,8 @@ let swiper = new Swiper('.coaches-slider__swiper', {
   centeredSlides: true,
   slidesPerView: 'auto',
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider-controls-coaches-next',
+    prevEl: '.slider-controls-coaches-prev',
   },
   breakpoints: {
     640: {
@@ -26,8 +26,8 @@ let swiper = new Swiper('.coaches-slider__swiper', {
 let carousel = new Swiper('.reviews-swiper', {
   slidesPerView: 1,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider-controls-review-next',
+    prevEl: '.slider-controls-review-prev',
   },
 });
 
