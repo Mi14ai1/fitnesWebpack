@@ -1,7 +1,13 @@
 .coaches-card {
+  box-sizing: border-box;
   position: relative;
+  display: flex;
+  align-items: flex-end;
+
   width: 260px;
   height: 294px;
+
+  padding: 22px;
 
   img {
     position: absolute;
@@ -11,11 +17,23 @@
     height: 100%;
     z-index: 0;
   }
-  //hover
+
+  p,
+  dd,
+  dt {
+    font-family: $ff-roboto-condensed;
+    color: $color-default-white;
+  }
+
   p {
-    display: none;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+
+    width: 100%;
     z-index: 1;
+    margin: 0;
+    text-align: center;
   }
 
   dl {
@@ -23,21 +41,18 @@
     width: fit-content;
   }
 
-  dt {
-    font-family: $ff-roboto-condensed;
+  dt,
+  p {
     font-size: 18px;
     line-height: 27px;
     font-weight: 700;
-    color: $color-default-white;
     margin: 0;
   }
 
   dd {
-    font-family: $ff-roboto-condensed;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: $sport-text-color;
     text-align: center;
     margin: -3px 0 0;
   }
@@ -71,28 +86,47 @@
   }
 
   &__info {
-    position: relative;
-    height: 100%;
-    padding: 52px 20px 20px 57px;
-    background: $coaches-info-background-color;
-    overflow-y: auto;
-    z-index: 1;
+    position: absolute;
+    z-index: -1;
+  }
 
-    scrollbar-width: thin;
-    scrollbar-color: $coaches-info-background-color;
-
-    &::-webkit-scrollbar {
-      width: 3px;
+  &:hover {
+    p {
+      display: none;
     }
 
-    &::-webkit-scrollbar-track {
+    .coaches-card__info {
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      height: 100%;
+      padding: 52px 20px 20px 57px;
       background: $coaches-info-background-color;
+      overflow-y: auto;
+      z-index: 1;
+
+      scrollbar-width: thin;
+      scrollbar-color: $coaches-info-background-color;
+
+      dd {
+        color: $sport-text-color;
+      }
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $coaches-info-background-color;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: $color-razzmatazz;
+      }
     }
 
-    &::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: $color-razzmatazz;
-    }
+    box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
   }
 
   @media #{$middle-vp} {
@@ -105,4 +139,3 @@
   }
   margin: 0;
 }
-

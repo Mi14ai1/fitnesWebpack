@@ -1,4 +1,6 @@
 .footer {
+  box-sizing: border-box;
+  padding-top: 45px;
   background: #030a1a;
   min-height: 108px;
 
@@ -10,8 +12,25 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+
+  &__logo {
+    margin-right: 276px;
+  }
+
+  &__navigation + &__navigation {
+    margin-left: $navigation-indent;
+  }
 }
+
 
 .footer__social {
   grid-row: 3 /4;
+
+  margin-top: -4px;
+  margin-left: auto;
+  padding-right: 1px;
+
+  a + a {
+    margin-left: 11px;
+  }
 }

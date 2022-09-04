@@ -60,6 +60,10 @@
 
   &--coaches {
     max-width: 1272px;
+
+    @media (max-width: 1365px) and (min-width: 1200px) {
+      max-width: calc(100vw - 166px);
+    }
   }
 
   &--competition {
