@@ -14,4 +14,8 @@
   right: -103px;
   bottom: -274px;
   z-index: 1;
+
+  @media (max-width: 1365px) and (min-width: 1200px) {
+    right: calc((-100vw + 100%) / 2);
+  }
 }
