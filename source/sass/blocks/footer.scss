@@ -17,12 +17,26 @@
     margin-right: 276px;
 
     @media #{$middle-vp} {
-      margin-right: 0;
+      margin-right: 64px;
+      width: 80px;
     }
   }
 
   &__navigation + &__navigation {
     margin-left: $navigation-indent;
+
+    @media #{$middle-vp} {
+      margin-left: 30px;
+    }
+  }
+
+  @media #{$middle-vp} {
+    padding-top: 47px;
+    padding-bottom: 44px;
+
+    &__navigation {
+      padding-top: 1px;
+    }
   }
 }
 
@@ -36,5 +50,10 @@
 
   a + a {
     margin-left: 11px;
+  }
+
+  @media #{$middle-vp} {
+    margin-top: -2px;
+    padding-right: 0;
   }
 }
