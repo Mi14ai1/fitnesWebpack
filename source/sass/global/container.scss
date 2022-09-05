@@ -81,4 +81,10 @@
       padding: 40px 45px 100px;
     }
   }
+
+  &--footer {
+    @media #{$middle-vp} {
+      padding: 0 39px 0 45px;
+    }
+  }
 }

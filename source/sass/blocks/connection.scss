@@ -39,6 +39,10 @@
     &--contacts {
       padding-top: 70px;
       padding-left: 120px;
+
+      @media #{$narrow-vp} {
+        padding-left: 0;
+      }
     }
 
     @media #{$middle-vp} {

@@ -769,6 +769,10 @@ template {
   z-index: 1;
 }
 
+.logo img {
+  width: 100%;
+}
+
 .header-phone {
   margin-left: auto;
 }
@@ -2547,7 +2551,6 @@ template {
   }
 
   .logo {
-    width: 68px;
     height: 15px;
   }
 
@@ -2575,6 +2578,10 @@ template {
     line-height: 19px;
   }
 
+  .top-screen img {
+    display: none;
+  }
+
   .top-screen-text span {
     font-size: 28px;
     line-height: 28px;
@@ -2589,6 +2596,10 @@ template {
   .section-title h2 {
     font-size: 32px;
     line-height: 32px;
+  }
+
+  .subscription__plates {
+    display: none;
   }
 
   .competition {
@@ -2636,6 +2647,10 @@ template {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
+  .connection__container--contacts {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2663,6 +2678,10 @@ template {
     padding: 40px 45px 100px;
   }
 
+  .container--footer {
+    padding: 0 39px 0 45px;
+  }
+
   .header {
     padding: 40px 45px 25px;
     margin-bottom: -89px;
@@ -2677,7 +2696,6 @@ template {
   }
 
   .logo {
-    width: 82px;
     height: 17px;
   }
 
@@ -2688,7 +2706,30 @@ template {
   }
 
   .footer__logo {
-    margin-right: 0;
+    margin-right: 64px;
+    width: 80px;
+  }
+
+  .footer__navigation + .footer__navigation {
+    margin-left: 30px;
+  }
+
+  .footer {
+    padding-top: 47px;
+    padding-bottom: 44px;
+  }
+
+  .footer__navigation {
+    padding-top: 1px;
+  }
+
+  .footer__social {
+    margin-top: -2px;
+    padding-right: 0;
+  }
+
+  .navigation li + li {
+    margin-left: 30px;
   }
 
   .top-screen {
