@@ -1,7 +1,4 @@
 .presentation-text {
-  max-width: 355px;
-  padding-top: 47px;
-
   h2 {
     margin-bottom: 9px;
   }
@@ -16,6 +13,10 @@
     color: $color-blue-zodiac;
 
     margin-bottom: 39px;
+
+    @media #{$middle-vp} {
+      margin-bottom: 34px;
+    }
   }
 
   p {
@@ -31,5 +32,15 @@
 
   &__description + &__description {
     margin-top: 6px;
+  }
+}
+
+.presentation-text__description {
+  @media #{$not-wide-vp} {
+    padding: 0 60px;
+
+    &--not-wide-hidden {
+      display: none;
+    }
   }
 }

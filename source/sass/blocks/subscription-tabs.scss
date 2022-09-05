@@ -12,6 +12,10 @@
   margin: 0 auto;
   list-style: none;
   box-shadow: 0 2px 0 0 $tab-navigation-indicator-color;
+
+  @media #{$middle-vp} {
+    max-width: 331px;
+  }
 }
 
 .subscription-tabs__controls-item {
@@ -50,8 +54,19 @@
     background: none;
     color: $tab-button-active-color;
   }
+
+  @media #{$middle-vp} {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .subscription-tabs__content {
   padding-top: 40px;
+
+  @media #{$middle-vp} {
+    max-width: 442px;
+    padding-top: 45px;
+    margin: 0 auto;
+  }
 }

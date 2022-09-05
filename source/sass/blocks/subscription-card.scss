@@ -39,6 +39,10 @@
     width: 100%;
     padding-top: 65px;
     margin-bottom: 25px;
+
+    @media #{$middle-vp} {
+      margin-bottom: 26px;
+    }
   }
 
   span {
@@ -102,6 +106,10 @@
       background: $gradient-default;
       color: $color-default-white;
     }
+  }
+
+  @media #{$middle-vp} {
+    max-width: 442px;
   }
 }
 

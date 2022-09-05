@@ -1,5 +1,5 @@
-.presentation iframe {
-  border: 0;
+.presentation {
+  padding-bottom: 183px;
 }
 
 .presentation__grid {
@@ -10,5 +10,17 @@
 
   @media #{$not-wide-vp} {
     flex-direction: column;
+  }
+}
+
+.presentation__text {
+  max-width: 355px;
+  padding-top: 47px;
+
+  @media #{$middle-vp} {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 99px;
+    margin-bottom: 43px;
   }
 }

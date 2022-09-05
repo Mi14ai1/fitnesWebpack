@@ -3,10 +3,23 @@
   display: flex;
   background: transparent;
   padding: 30px 0 30px 0;
-  margin-bottom: -$header-height;
+  margin-bottom: -86px;
   z-index: 1;
 
   @media #{$middle-vp} {
     padding: 40px 45px 25px;
+    margin-bottom: -89px;
+  }
+}
+
+.header__logo img {
+  @media #{$middle-vp} {
+    width: 80px;
+  }
+}
+
+.header__phone {
+  @media #{$middle-vp} {
+    margin-top: -1px;
   }
 }

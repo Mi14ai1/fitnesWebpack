@@ -13,10 +13,8 @@
   }
 
   &--advantages {
-    padding: 0 28px 0 29px;
-
     @media #{$middle-vp} {
-      padding: 0 49px;
+      padding: 0 20px;
     }
 
     @media #{$narrow-vp} {
@@ -75,6 +73,12 @@
 
     @media #{$narrow-vp} {
       padding: 0;
+    }
+  }
+
+  &--reviews {
+    @media #{$middle-vp} {
+      padding: 40px 45px 100px;
     }
   }
 }

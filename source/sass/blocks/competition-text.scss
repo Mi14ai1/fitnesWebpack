@@ -14,6 +14,11 @@
     padding-top: 2px;
     margin: 0;
     height: fit-content;
+
+    @media #{$middle-vp} {
+      font-size: 52px;
+      line-height: 52px;
+    }
   }
 
   p {
@@ -24,6 +29,12 @@
     font-weight: 400;
     color: $color-default-white;
     margin: 9px 0 35px;
+
+    @media #{$middle-vp} {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0 0 20px;
+    }
   }
 
   a {
@@ -45,9 +56,28 @@
     box-shadow: inset 0 0 0 4px $color-default-white;
 
     user-select: none;
+
+    @media #{$middle-vp} {
+      box-sizing: border-box;
+      font-size: 10px;
+      line-height: 12px;
+      box-shadow: inset 0 0 0 2px $color-default-white;
+      min-height: 41px;
+      max-width: 204px;
+      margin-left: -1px;
+      padding: 15px 10px 10px;
+    }
+  }
+
+  @media #{$middle-vp} {
+    padding: 47px 21px 40px 45px;
   }
 }
 
 .competition-text__date-list {
   padding-left: 50px;
+
+  @media #{$middle-vp} {
+    padding-left: 30px;
+  }
 }
