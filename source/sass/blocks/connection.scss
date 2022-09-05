@@ -5,22 +5,45 @@
 
   &__wrapper {
     flex-grow: 1;
-    padding-bottom: 44px;
+
+    @media #{$wide-vp} {
+      padding-bottom: 44px;
+    }
+
+
+    &--form-indent {
+      @media #{$middle-vp} {
+        padding-bottom: 44px;
+      }
+    }
+
+    &--contacts-indent {
+      @media #{$middle-vp} {
+        padding-bottom: 26px;
+      }
+    }
   }
 
   &__container {
     box-sizing: border-box;
     padding-top: 69px;
-    padding-left: 20px;
     max-width: 600px;
 
     &--align-right {
-      margin-left: auto;
+      @media #{$wide-vp} {
+        padding-left: 20px;
+        margin-left: auto;
+      }
     }
 
     &--contacts {
       padding-top: 70px;
       padding-left: 120px;
+    }
+
+    @media #{$middle-vp} {
+      margin: 0 auto;
+      padding: 69px 82px 17px 49px;
     }
   }
 

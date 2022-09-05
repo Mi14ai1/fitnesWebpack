@@ -5,6 +5,13 @@
     max-width: 400px;
     padding-top: 40px;
     padding-left: 4px;
+
+    @media #{$not-wide-vp} {
+      padding-left: 0;
+      padding-right: 14px;
+      padding-top: 33px;
+      max-width: initial;
+    }
   }
 
   dl {
@@ -24,12 +31,24 @@
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 3px;
+
+    @media #{$not-wide-vp} {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
   }
 
   dd {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+
+    @media #{$not-wide-vp} {
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
 
   a {
@@ -49,6 +68,14 @@
       height: 102px;
       width: 1px;
       background: $connection-border-color;
+    }
+
+    @media #{$not-wide-vp} {
+      padding-left: 48px;
+
+      &::before {
+        height: 128.5px;
+      }
     }
   }
 

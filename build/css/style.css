@@ -2212,19 +2212,13 @@ template {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding-bottom: 44px;
 }
 
 .connection__container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 69px;
-  padding-left: 20px;
   max-width: 600px;
-}
-
-.connection__container--align-right {
-  margin-left: auto;
 }
 
 .connection__container--contacts {
@@ -2430,6 +2424,15 @@ template {
     height: 2px;
     background: rgba(209, 10, 66, 0.2);
   }
+
+  .connection__wrapper {
+    padding-bottom: 44px;
+  }
+
+  .connection__container--align-right {
+    padding-left: 20px;
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 1365px) {
@@ -2477,6 +2480,48 @@ template {
   .connection {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .free-training__inputs {
+    max-width: initial;
+    width: 100%;
+    gap: 35px;
+  }
+
+  .free-training input {
+    max-width: initial;
+    width: 100%;
+  }
+
+  .free-training button {
+    max-width: initial;
+  }
+
+  .contacts__container {
+    padding-left: 0;
+    padding-right: 14px;
+    padding-top: 33px;
+    max-width: initial;
+  }
+
+  .contacts dt {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .contacts dd {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .contacts dl + dl {
+    padding-left: 48px;
+  }
+
+  .contacts dl + dl::before {
+    height: 128.5px;
   }
 }
 
@@ -3028,6 +3073,27 @@ template {
 
   .review-card {
     padding: 54px 65px 56px;
+  }
+
+  .connection__wrapper--form-indent {
+    padding-bottom: 44px;
+  }
+
+  .connection__wrapper--contacts-indent {
+    padding-bottom: 26px;
+  }
+
+  .connection__container {
+    margin: 0 auto;
+    padding: 69px 82px 17px 49px;
+  }
+
+  .free-training h2 {
+    margin-bottom: 35px;
+  }
+
+  .free-training__inputs {
+    gap: 60px;
   }
 }
 
