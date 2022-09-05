@@ -8,4 +8,8 @@
   &__slider {
     box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   }
+
+  @media #{$middle-vp} {
+    max-width: 678px;
+  }
 }

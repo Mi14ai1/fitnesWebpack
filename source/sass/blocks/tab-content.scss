@@ -12,3 +12,7 @@
     grid-template-columns: 1fr;
   }
 }
+
+.tab-content__cards-item + .tab-content__cards-item {
+  margin-top: 41px;
+}

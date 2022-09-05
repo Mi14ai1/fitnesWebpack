@@ -6,5 +6,16 @@
   h2 {
     padding-left: 58px;
     margin-bottom: 31px;
+
+    @media #{$middle-vp} {
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  @media #{$middle-vp} {
+
+    padding-bottom: 80px;
   }
 }

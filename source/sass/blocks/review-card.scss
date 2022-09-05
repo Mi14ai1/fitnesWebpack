@@ -35,4 +35,8 @@
     border-radius: 50%;
     margin-right: 28px;
   }
+
+  @media #{$middle-vp} {
+    padding: 54px 65px 56px;
+  }
 }

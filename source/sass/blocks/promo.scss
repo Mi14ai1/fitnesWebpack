@@ -5,6 +5,10 @@
   h2 {
     text-align: center;
   }
+
+  @media #{$middle-vp} {
+    padding-top: 100px;
+  }
 }
 
 .promo__content {
@@ -16,6 +20,16 @@
   @media #{$not-wide-vp} {
     flex-direction: column;
   }
+
+  @media #{$middle-vp} {
+    padding-top: 40px;
+  }
+}
+
+.promo__main {
+  @media #{$middle-vp} {
+    margin-bottom: 30px;
+  }
 }
 
 .promo__cards-container {
@@ -24,8 +38,9 @@
   gap: 40px;
   flex-grow: 1;
 
-  @media #{$not-wide-vp} {
-    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+  @media #{$middle-vp} {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     width: 100%;
   }
 }
