@@ -1095,9 +1095,8 @@ template {
   left: 22px;
   bottom: 0;
   line-height: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 364px;
+  height: 228px;
 }
 
 .presentation-media__video::after {
@@ -1109,6 +1108,11 @@ template {
   height: 100%;
   background: rgba(20, 54, 122, 0.5);
   z-index: 1;
+}
+
+.presentation-media__video--played::after {
+  width: 0;
+  height: 0;
 }
 
 .presentation-media__video-play {
@@ -1209,21 +1213,12 @@ template {
   width: fit-content;
 }
 
-.subscription-tabs__controls-item--active::after {
-  content: "";
-  position: absolute;
-  left: -1px;
-  bottom: -3px;
-  width: calc(100% + 1px);
-  height: 2px;
-  background: #d10a42;
-}
-
 .subscription-tabs__controls-item:last-child {
   justify-self: flex-end;
 }
 
 .subscription-tabs__button {
+  position: relative;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -1234,6 +1229,16 @@ template {
 
 .subscription-tabs__button--active {
   color: #102654;
+}
+
+.subscription-tabs__button--active::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: -13px;
+  width: calc(100% + 1px);
+  height: 2px;
+  background: #d10a42;
 }
 
 .subscription-tabs__button:hover {
@@ -1376,7 +1381,7 @@ template {
   list-style: none;
 }
 
-.tab-content__cards-list {
+.tabs-content__cards-list {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -2294,6 +2299,15 @@ template {
   margin-bottom: 19px;
 }
 
+.tab {
+  display: none;
+}
+
+.tab--active {
+  display: -ms-grid;
+  display: grid;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2541,12 +2555,12 @@ template {
     max-width: 442px;
   }
 
-  .tab-content__cards-list {
+  .tabs-content__cards-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
-  .tab-content__cards-item + .tab-content__cards-item {
+  .tabs-content__cards-item + .tabs-content__cards-item {
     margin-top: 41px;
   }
 
@@ -2885,9 +2899,8 @@ template {
     display: none;
   }
 
-  .subscription-tabs__controls-item--active::after {
+  .subscription-tabs__button--active::after {
     left: 0;
-    bottom: -4px;
     width: 100%;
   }
 
@@ -2939,7 +2952,7 @@ template {
     padding: 44px 10px 20px;
   }
 
-  .tab-content__cards-item + .tab-content__cards-item {
+  .tabs-content__cards-item + .tabs-content__cards-item {
     margin-top: 35px;
   }
 

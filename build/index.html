@@ -112,7 +112,7 @@
                   width="660"
                   height="401"/>
               </picture>
-              <div class="presentation-media__video">
+              <div class="presentation-media__video" data-source="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                 <picture>
                   <source
                     media="(min-width: 1200px)"
@@ -149,7 +149,6 @@
                 <div class="presentation-media__video-play">
                   <button class="button presentation-media__video-play-button"><span class="visually-hidden">Проиграть видео</span></button>
                 </div>
-                <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
               </div>
             </div>
           </div>
@@ -159,18 +158,18 @@
             <h2>Абонементы</h2>
             <ul class="subscription-tabs__controls-list">
               <li class="subscription-tabs__controls-item subscription-tabs__controls-item--active">
-                <button class="button subscription-tabs__button subscription-tabs__button--active">1 месяц</button>
+                <button class="button subscription-tabs__button subscription-tabs__button--active js-month">1 месяц</button>
               </li>
               <li class="subscription-tabs__controls-item">
-                <button class="button subscription-tabs__button">6 месяцев</button>
+                <button class="button subscription-tabs__button js-half-year">6 месяцев</button>
               </li>
               <li class="subscription-tabs__controls-item">
-                <button class="button subscription-tabs__button">12 месяцев</button>
+                <button class="button subscription-tabs__button js-year">12 месяцев</button>
               </li>
             </ul>
-            <div class="subscription-tabs__content tab-content">
-              <ul class="tab-content__cards-list">
-                <li class="tab-content__cards-item">
+            <div class="subscription-tabs__content tabs-content">
+              <ul class="tabs-content__cards-list tab js-month tab--active">
+                <li class="tabs-content__cards-item">
                   <div class="subscription-card">
                     <dl class="subscription-card__description-list">
                       <dt>С&nbsp;тренером</dt>
@@ -183,7 +182,7 @@
                     <a href="#" class="button subscription-card__button">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab-content__cards-item">
+                <li class="tabs-content__cards-item">
                   <div class="subscription-card">
                     <dl class="subscription-card__description-list">
                       <dt>Дневной</dt>
@@ -196,7 +195,7 @@
                     <a href="#" class="button subscription-card__button">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab-content__cards-item">
+                <li class="tabs-content__cards-item">
                   <div class="subscription-card">
                     <dl class="subscription-card__description-list">
                       <dt>Полный день</dt>
@@ -204,6 +203,88 @@
                     </dl>
                     <div class="subscription-card__currency">
                       <span data-subscription-price="2700">2700</span>
+                      <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
+                    </div>
+                    <a href="#" class="button subscription-card__button">купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabs-content__cards-list tab js-half-year">
+                <li class="tabs-content__cards-item">
+                  <div class="subscription-card">
+                    <dl class="subscription-card__description-list">
+                      <dt>С&nbsp;тренером</dt>
+                      <dd>72&nbsp;занятия</dd>
+                    </dl>
+                    <div class="subscription-card__currency">
+                      <span data-subscription-price="25000">25000</span>
+                      <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
+                    </div>
+                    <a href="#" class="button subscription-card__button">купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs-content__cards-item">
+                  <div class="subscription-card">
+                    <dl class="subscription-card__description-list">
+                      <dt>Дневной</dt>
+                      <dd>с&nbsp;8:00 до&nbsp;17:00</dd>
+                    </dl>
+                    <div class="subscription-card__currency">
+                      <span data-subscription-price="10000">10000</span>
+                      <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
+                    </div>
+                    <a href="#" class="button subscription-card__button">купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs-content__cards-item">
+                  <div class="subscription-card">
+                    <dl class="subscription-card__description-list">
+                      <dt>Полный день</dt>
+                      <dd>с&nbsp;8:00 до&nbsp;22:00</dd>
+                    </dl>
+                    <div class="subscription-card__currency">
+                      <span data-subscription-price="15000">15000</span>
+                      <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
+                    </div>
+                    <a href="#" class="button subscription-card__button">купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabs-content__cards-list tab js-year">
+                <li class="tabs-content__cards-item">
+                  <div class="subscription-card">
+                    <dl class="subscription-card__description-list">
+                      <dt>С&nbsp;тренером</dt>
+                      <dd>144&nbsp;занятия</dd>
+                    </dl>
+                    <div class="subscription-card__currency">
+                      <span data-subscription-price="50000">50000</span>
+                      <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
+                    </div>
+                    <a href="#" class="button subscription-card__button">купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs-content__cards-item">
+                  <div class="subscription-card">
+                    <dl class="subscription-card__description-list">
+                      <dt>Дневной</dt>
+                      <dd>с&nbsp;8:00 до&nbsp;17:00</dd>
+                    </dl>
+                    <div class="subscription-card__currency">
+                      <span data-subscription-price="17000">17000</span>
+                      <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
+                    </div>
+                    <a href="#" class="button subscription-card__button">купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs-content__cards-item">
+                  <div class="subscription-card">
+                    <dl class="subscription-card__description-list">
+                      <dt>Полный день</dt>
+                      <dd>с&nbsp;8:00 до&nbsp;22:00</dd>
+                    </dl>
+                    <div class="subscription-card__currency">
+                      <span data-subscription-price="27000">27000</span>
                       <img src="img/svg/currency-ru.svg" alt="Символ волюты - рубль" width="30" height="42">
                     </div>
                     <a href="#" class="button subscription-card__button">купить абонемент</a>

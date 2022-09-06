@@ -1,4 +1,4 @@
-.tab-content__cards-list {
+.tabs-content__cards-list {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 360px);
@@ -14,7 +14,7 @@
   }
 }
 
-.tab-content__cards-item + .tab-content__cards-item {
+.tabs-content__cards-item + .tabs-content__cards-item {
   @media #{$not-wide-vp} {
     margin-top: 41px;
   }
