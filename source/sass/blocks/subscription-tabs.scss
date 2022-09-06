@@ -35,6 +35,14 @@
   &:last-child {
     justify-self: flex-end;
   }
+
+  @media #{$narrow-vp} {
+    &--active::after {
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+    }
+  }
 }
 
 .subscription-tabs__button {
@@ -59,14 +67,26 @@
     font-size: 18px;
     line-height: 27px;
   }
+
+  @media #{$narrow-vp} {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .subscription-tabs__content {
   padding-top: 40px;
 
-  @media #{$middle-vp} {
+  @media #{$not-wide-vp} {
     max-width: 442px;
-    padding-top: 45px;
     margin: 0 auto;
+  }
+
+  @media #{$middle-vp} {
+    padding-top: 45px;
+  }
+
+  @media #{$narrow-vp} {
+    padding-top: 37px;
   }
 }

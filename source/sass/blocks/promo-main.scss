@@ -2,7 +2,10 @@
   display: flex;
   max-width: 560px;
   background: $color-red-ribbon;
-  margin-right: 40px;
+
+  @media #{$not-narrow-vp} {
+    margin-right: 40px;
+  }
 
   dl {
     flex-grow: 1;
@@ -14,13 +17,18 @@
   a {
     font-family: $ff-roboto-condensed;
     color: $color-default-white;
-    margin: 0;
+
+
+    @media #{$narrow-vp} {
+      text-align: center;
+    }
   }
 
   dt {
     font-size: 28px;
     line-height: 44px;
     font-weight: 700;
+    margin: 0;
     margin-bottom: -25px;
   }
 
@@ -28,12 +36,19 @@
     font-size: 70px;
     line-height: 109px;
     font-weight: 700;
+    margin: 0;
   }
 
   &__description {
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
+    margin: 0;
+
+    @media #{$narrow-vp} {
+      margin-top: -5px;
+      margin-bottom: 31px;
+    }
   }
 
   a {
@@ -45,13 +60,19 @@
     text-underline-offset: 4px;
   }
 
+  img {
+    @media #{$not-wide-vp} {
+      width: 100%;
+    }
+
+    @media #{$narrow-vp} {
+      height: 100%;
+    }
+  }
+
   @media #{$middle-vp} {
     margin-right: 0;
     max-width: 100%;
-
-    img {
-      width: 100%;
-    }
   }
 
   @media #{$narrow-vp} {

@@ -6,7 +6,7 @@
   }
 
   @media #{$narrow-vp} {
-    padding: 0 15px;
+    padding: 70px 15px;
   }
 }
 
@@ -22,9 +22,13 @@
     object-fit: cover;
 
 
-    @media #{$middle-vp} {
+    @media #{$not-wide-vp} {
       height: 100%;
     }
+  }
+
+  @media #{$middle-vp} {
+    justify-content: space-between;
   }
 
   @media #{$narrow-vp} {

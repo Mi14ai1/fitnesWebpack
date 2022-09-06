@@ -9,7 +9,7 @@
   }
 
   @media #{$narrow-vp} {
-    padding: 0 25px;
+    padding: 0 15px;
   }
 
   &--advantages {
@@ -18,29 +18,7 @@
     }
 
     @media #{$narrow-vp} {
-      padding: 0 25px;
-    }
-  }
-
-  &--services {
-    @media #{$wide-vp} {
-      padding: 0 30px;
-    }
-  }
-
-  &--feedback {
-    padding: 165px 40px 20px;
-
-    @media #{$wide-vp} {
-      position: relative;
-    }
-
-    @media #{$middle-vp} {
-      padding: 45px 50px 20px;
-    }
-
-    @media #{$narrow-vp} {
-      padding: 47px 25px 20px;
+      padding: 0;
     }
   }
 
@@ -56,11 +34,21 @@
     }
   }
 
+  &--presentation-media {
+    @media #{$narrow-vp} {
+      padding: 0;
+    }
+  }
+
   &--coaches {
     max-width: 1272px;
 
     @media (max-width: 1365px) and (min-width: 1200px) {
       max-width: calc(100vw - 166px);
+    }
+
+    @media #{$narrow-vp} {
+      padding: 0 16px;
     }
   }
 

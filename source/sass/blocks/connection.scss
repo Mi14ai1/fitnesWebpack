@@ -15,11 +15,19 @@
       @media #{$middle-vp} {
         padding-bottom: 44px;
       }
+
+      @media #{$narrow-vp} {
+        padding: 0 15px;
+      }
     }
 
     &--contacts-indent {
       @media #{$middle-vp} {
         padding-bottom: 26px;
+      }
+
+      @media #{$narrow-vp} {
+        padding: 69px 15px 43px;
       }
     }
   }
@@ -41,13 +49,18 @@
       padding-left: 120px;
 
       @media #{$narrow-vp} {
-        padding-left: 0;
+        padding: 0;
       }
     }
 
     @media #{$middle-vp} {
       margin: 0 auto;
       padding: 69px 82px 17px 49px;
+    }
+
+    @media #{$narrow-vp} {
+      max-width: initial;
+      width: 100%;
     }
   }
 

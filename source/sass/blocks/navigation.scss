@@ -5,7 +5,9 @@
   list-style: none;
 
   li + li {
-    margin-left: 40px;
+    @media #{$wide-vp} {
+      margin-left: 40px;
+    }
 
     @media #{$middle-vp} {
       margin-left: 30px;
@@ -13,7 +15,9 @@
   }
 
   &__item--schedule {
-    padding-left: 2px;
+    @media #{$not-narrow-vp} {
+      padding-left: 2px;
+    }
   }
 
   @media #{$narrow-vp} {

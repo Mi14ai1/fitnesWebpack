@@ -23,7 +23,8 @@
   }
 
   @media #{$narrow-vp} {
-    max-width: 610px;
+    max-width: initial;
+    padding: 0 20px;
   }
 }
 

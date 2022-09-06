@@ -23,6 +23,12 @@
     color: $color-blue-zodiac;
 
     margin-bottom: 5px;
+
+    @media #{$narrow-vp} {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 9px;
+    }
   }
 
   dd {
@@ -42,6 +48,11 @@
 
     @media #{$middle-vp} {
       margin-bottom: 26px;
+    }
+
+    @media #{$narrow-vp} {
+      padding-top: 54px;
+      margin-bottom: 21px;
     }
   }
 
@@ -66,12 +77,30 @@
       top: 50%;
       transform: translate(calc(-50% + 20px), calc(-50% - 24px));
       z-index: -1;
+
+      @media #{$narrow-vp} {
+        font-size: 80px;
+        line-height: 120px;
+        transform: translate(calc(-50% + 17px), calc(-50% - 19px));
+      }
+    }
+
+    @media #{$narrow-vp} {
+      font-size: 48px;
+      line-height: 72px;
+      padding-left: 6px;
+      margin-right: 7px;
     }
   }
 
   span + img {
     position: relative;
     z-index: 1;
+
+    @media #{$narrow-vp} {
+      width: 24px;
+      transform: translateY(4px);
+    }
   }
 
   .subscription-card__button {
@@ -108,8 +137,14 @@
     }
   }
 
-  @media #{$middle-vp} {
+  @media #{$not-wide-vp} {
     max-width: 442px;
+  }
+
+  @media #{$narrow-vp} {
+    min-height: 384px;
+    margin: 0;
+    padding: 44px 10px 20px;
   }
 }
 
