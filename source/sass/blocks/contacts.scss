@@ -12,6 +12,11 @@
       padding-top: 33px;
       max-width: initial;
     }
+
+    @media #{$narrow-vp} {
+      flex-direction: column;
+      padding-top: 35px;
+    }
   }
 
   dl {
@@ -59,15 +64,17 @@
     position: relative;
     padding-left: 60px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(calc(-50% - 10px));
-      height: 102px;
-      width: 1px;
-      background: $connection-border-color;
+    @media #{$not-narrow-vp} {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(calc(-50% - 10px));
+        height: 102px;
+        width: 1px;
+        background: $connection-border-color;
+      }
     }
 
     @media #{$not-wide-vp} {
@@ -76,6 +83,10 @@
       &::before {
         height: 128.5px;
       }
+    }
+
+    @media #{$narrow-vp} {
+      padding: 0;
     }
   }
 

@@ -12,4 +12,8 @@
   @media #{$middle-vp} {
     max-width: 678px;
   }
+
+  @media #{$narrow-vp} {
+    padding: 0 32px;
+  }
 }

@@ -12,6 +12,10 @@
   dl {
     flex-grow: 1;
     margin: 0;
+
+    @media #{$narrow-vp} {
+      text-align: center;
+    }
   }
 
   dt,
@@ -42,5 +46,14 @@
     letter-spacing: 0.7px;
     text-transform: uppercase;
     text-underline-offset: 4px;
+
+    @media #{$narrow-vp} {
+      text-align: center;
+    }
+  }
+
+  @media #{$narrow-vp} {
+    padding-top: 30px;
+    padding-bottom: 41px;
   }
 }

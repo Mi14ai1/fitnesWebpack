@@ -16,6 +16,11 @@
     border-left: 1px solid;
     border-bottom: 1px solid;
     border-color: $color-slider-control;
+
+    @media #{$narrow-vp} {
+      width: 13px;
+      height: 13px;
+    }
   }
 
 
@@ -39,5 +44,11 @@
       transform-origin: top left;
       transform: rotate(45deg) translate(-50%, -50%);
     }
+  }
+
+  @media #{$narrow-vp} {
+    width: 20px;
+    height: 30px;
+    padding: 0;
   }
 }

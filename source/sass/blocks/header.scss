@@ -10,11 +10,19 @@
     padding: 40px 45px 25px;
     margin-bottom: -89px;
   }
+
+  @media #{$narrow-vp} {
+    padding: 18px 15px;
+  }
 }
 
 .header__logo img {
   @media #{$middle-vp} {
     width: 80px;
+  }
+
+  @media #{$narrow-vp} {
+    width: 67px;
   }
 }
 

@@ -7,6 +7,11 @@
     padding-top: 100px;
     padding-bottom: 99px;
   }
+
+  @media #{$narrow-vp} {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .subscription h2 {
@@ -15,6 +20,10 @@
 
   @media #{$middle-vp} {
     margin-bottom: 19px;
+  }
+
+  @media #{$narrow-vp} {
+    margin-bottom: 11px;
   }
 }
 

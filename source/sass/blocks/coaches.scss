@@ -7,15 +7,23 @@
     padding-left: 58px;
     margin-bottom: 31px;
 
-    @media #{$middle-vp} {
+    @media #{$not-wide-vp} {
       padding: 0;
       margin-bottom: 20px;
       text-align: center;
+    }
+
+    @media #{$narrow-vp} {
+      margin-bottom: 22px;
     }
   }
 
   @media #{$middle-vp} {
 
     padding-bottom: 80px;
+  }
+
+  @media #{$narrow-vp} {
+    padding-bottom: 50px;
   }
 }

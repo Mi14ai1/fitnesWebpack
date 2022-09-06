@@ -7,6 +7,10 @@
     @media #{$middle-vp} {
       margin-bottom: 35px;
     }
+
+    @media #{$narrow-vp} {
+      margin-bottom: 37px;
+    }
   }
 
   &__inputs {
@@ -23,6 +27,19 @@
 
     @media #{$middle-vp} {
       gap: 60px;
+    }
+
+    @media #{$narrow-vp} {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 39px;
+    }
+  }
+
+  label + label {
+    @media #{$narrow-vp} {
+      margin-top: 34px;
     }
   }
 
@@ -70,5 +87,17 @@
     @media #{$not-wide-vp} {
       max-width: initial;
     }
+
+    @media #{$narrow-vp} {
+      box-shadow:
+        inset 0 0 0 1.5px $color-default-white,
+        0 0 0 1.5px $color-default-white;
+      min-height: 52px;
+      margin: 0;
+    }
+  }
+
+  @media #{$narrow-vp} {
+    min-height: 386px;
   }
 }

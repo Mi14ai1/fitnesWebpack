@@ -1,6 +1,10 @@
 .presentation-text {
   h2 {
     margin-bottom: 9px;
+
+    @media #{$narrow-vp} {
+      margin-bottom: 5px;
+    }
   }
 
   span {
@@ -16,6 +20,10 @@
 
     @media #{$middle-vp} {
       margin-bottom: 34px;
+    }
+
+    @media #{$narrow-vp} {
+      margin-bottom: 25px;
     }
   }
 
@@ -42,5 +50,10 @@
     &--not-wide-hidden {
       display: none;
     }
+  }
+
+  @media #{$narrow-vp} {
+    padding: 0;
+    padding-right: 30px;
   }
 }

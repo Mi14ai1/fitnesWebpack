@@ -108,6 +108,13 @@
       scrollbar-width: thin;
       scrollbar-color: $coaches-info-background-color;
 
+      dl {
+        @media #{$narrow-vp} {
+          margin: 0 0 33px;
+          padding-left: 5px;
+        }
+      }
+
       dd {
         color: $sport-text-color;
       }
@@ -123,6 +130,10 @@
       &::-webkit-scrollbar-thumb {
         border-radius: 2px;
         background-color: $color-razzmatazz;
+      }
+
+      @media #{$narrow-vp} {
+        padding: 41px 20px 20px 35px;
       }
     }
 

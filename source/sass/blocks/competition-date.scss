@@ -38,7 +38,7 @@
     }
 
 
-    @media #{$middle-vp} {
+    @media #{$not-wide-vp} {
       font-size: 12px;
       line-height: 18px;
       padding-bottom: 2px;
@@ -52,7 +52,7 @@
   font-weight: 700;
   margin-top: -7px;
 
-  @media #{$middle-vp} {
+  @media #{$not-wide-vp} {
     font-size: 24px;
     line-height: 36px;
     margin-top: -3px;
@@ -67,7 +67,7 @@
   padding-left: 7px;
   padding-right: 1px;
 
-  @media #{$middle-vp} {
+  @media #{$not-wide-vp} {
     font-size: 10px;
     line-height: 12px;
     padding: 3px 1px 0 3.5px;
@@ -77,7 +77,7 @@
 .competition-date__item + .competition-date__item {
   margin-top: 10px;
 
-  @media #{$middle-vp} {
+  @media #{$not-wide-vp} {
     margin: 0;
   }
 }

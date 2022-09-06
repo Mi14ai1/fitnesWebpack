@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 360px);
   justify-content: space-between;
+  row-gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -14,5 +15,11 @@
 }
 
 .tab-content__cards-item + .tab-content__cards-item {
-  margin-top: 41px;
+  @media #{$not-wide-vp} {
+    margin-top: 41px;
+  }
+
+  @media #{$narrow-vp} {
+    margin-top: 35px;
+  }
 }
