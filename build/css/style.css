@@ -765,6 +765,10 @@ template {
   z-index: 1;
 }
 
+.header__logo {
+  padding-right: 20px;
+}
+
 .logo img {
   width: 100%;
 }
@@ -1390,7 +1394,6 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  row-gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2086,6 +2089,7 @@ template {
   height: 37px;
   z-index: 10;
   padding: 10px;
+  cursor: pointer;
 }
 
 .slider-controls::before {
@@ -2429,6 +2433,10 @@ template {
   .presentation-media {
     padding-left: 85px;
     padding-bottom: 115px;
+  }
+
+  .tabs-content__cards-list {
+    row-gap: 10px;
   }
 
   .advantages__list {
@@ -2871,7 +2879,8 @@ template {
 
   .presentation-media__video {
     left: 50%;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     height: 167px;
     -webkit-transform: translate(-50%, 207px);
     -ms-transform: translate(-50%, 207px);
@@ -3192,9 +3201,10 @@ template {
 
   .review-card dt {
     line-height: 26px;
+    min-height: 60px;
     padding-top: 8px;
     padding-left: 99px;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
   }
 
   .review-card dd {
