@@ -45,7 +45,8 @@
   bottom: 0;
   line-height: 0;
 
-  width: fit-content;
+  width: 364px;
+  height: 228px;
 
   img {
     @media #{$not-wide-vp} {
@@ -78,6 +79,13 @@
     width: 320px;
     height: 167px;
     transform: translate(-50%, 207px);
+  }
+}
+
+.presentation-media__video--played {
+  &::after {
+    width: 0;
+    height: 0;
   }
 }
 

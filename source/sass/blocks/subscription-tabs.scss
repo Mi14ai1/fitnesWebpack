@@ -22,30 +22,13 @@
   position: relative;
   width: fit-content;
 
-  &--active::after {
-    content: "";
-    position: absolute;
-    left: -1px;
-    bottom: -3px;
-    width: calc(100% + 1px);
-    height: 2px;
-    background: $tab-control-active-color;
-  }
-
   &:last-child {
     justify-self: flex-end;
-  }
-
-  @media #{$narrow-vp} {
-    &--active::after {
-      left: 0;
-      bottom: -4px;
-      width: 100%;
-    }
   }
 }
 
 .subscription-tabs__button {
+  position: relative;
   font-family: $ff-roboto-condensed;
   font-size: 20px;
   line-height: 30px;
@@ -56,6 +39,21 @@
 
   &--active {
     color: $tab-button-active-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -1px;
+      bottom: -13px;
+      width: calc(100% + 1px);
+      height: 2px;
+      background: $tab-control-active-color;
+
+      @media #{$narrow-vp} {
+        left: 0;
+        width: 100%;
+      }
+    }
   }
 
   &:hover {
