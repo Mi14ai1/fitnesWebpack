@@ -13,7 +13,7 @@
     }
   }
 
-  &__inputs {
+  .free-training__inputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 441px;
@@ -58,10 +58,8 @@
   }
 
   input::placeholder {
-    font-family: $ff-roboto-condensed;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 400;
     color: $color-default-white;
   }
 
@@ -69,7 +67,6 @@
     box-sizing: border-box;
     display: inline-block;
     vertical-align: baseline;
-    font-family: $ff-roboto-condensed;
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;

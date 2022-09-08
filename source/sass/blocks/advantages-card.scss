@@ -1,4 +1,6 @@
 .advantages-card {
+  display: flex;
+
   dl {
     display: grid;
     column-gap: 30px;
@@ -71,7 +73,6 @@
   p {
     display: inline-block;
     vertical-align: baseline;
-    font-family: $ff-roboto-condensed;
     font-size: 71px;
     line-height: 106px;
     font-weight: 700;
@@ -213,5 +214,11 @@
     padding-top: 38px;
     padding-bottom: 42px;
     margin-bottom: 4px;
+  }
+}
+
+.advantages-card.advantages-card--experience-indent {
+  dl {
+    column-gap: 32px;
   }
 }

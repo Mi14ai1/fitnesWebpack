@@ -8,15 +8,13 @@
   background-color: $color-default-white;
   border: solid 7px $color-default-white;
 
-  dd,
-  dt {
-    font-family: $ff-roboto-condensed;
+  p,
+  h3 {
     text-align: center;
-    margin: 0;
     padding: 0;
   }
 
-  dt {
+  h3 {
     font-size: 26px;
     line-height: 40px;
     font-weight: 700;
@@ -31,14 +29,14 @@
     }
   }
 
-  dd {
+  p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: $color-blue-bayoux;
   }
 
-  &__currency {
+  .subscription-card__currency {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
@@ -58,7 +56,6 @@
 
   span {
     position: relative;
-    font-family: $ff-roboto-condensed;
     font-size: 60px;
     line-height: 90px;
     font-weight: 700;
@@ -108,7 +105,6 @@
     display: inline-block;
     vertical-align: baseline;
     align-self: center;
-    font-family: $ff-roboto-condensed;
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
@@ -146,16 +142,4 @@
     margin: 0;
     padding: 44px 10px 20px;
   }
-}
-
-.advantages-card.advantages-card--experience-indent {
-  dl {
-    column-gap: 32px;
-  }
-}
-
-.subscription-card__description-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }

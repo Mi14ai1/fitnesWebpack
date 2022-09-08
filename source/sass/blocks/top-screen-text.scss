@@ -21,7 +21,6 @@
 
   a {
     justify-self: flex-start;
-    font-family: $ff-roboto-condensed;
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
@@ -61,10 +60,8 @@
 
   p {
     grid-column: 1 / 2;
-    font-family: $ff-roboto-condensed;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 400;
     color: $color-default-white;
     text-align: right;
 

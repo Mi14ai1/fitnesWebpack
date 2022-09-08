@@ -14,7 +14,7 @@
     }
   }
 
-  &__item--schedule {
+  .navigation__item--schedule {
     @media #{$not-narrow-vp} {
       padding-left: 2px;
     }
@@ -26,10 +26,8 @@
 }
 
 .navigation a {
-  font-family: $ff-roboto-condensed;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: $color-default-white;
   text-decoration: none;
 

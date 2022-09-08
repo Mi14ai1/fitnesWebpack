@@ -1,5 +1,5 @@
 .contacts {
-  &__container {
+  .contacts__container {
     display: flex;
     justify-content: space-between;
     max-width: 400px;
@@ -90,7 +90,7 @@
     }
   }
 
-  &__item {
+  .contacts__item {
     margin-bottom: 19px;
   }
 }

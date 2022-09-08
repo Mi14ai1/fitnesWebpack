@@ -698,6 +698,35 @@ template {
   clip-path: inset(100%);
 }
 
+.page h3,
+.page p,
+.page li,
+.page a,
+.page span,
+.page input {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.page input:placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.page h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0;
+}
+
 .page__wrapper {
   position: relative;
   display: -webkit-box;
@@ -765,7 +794,7 @@ template {
   z-index: 1;
 }
 
-.header__logo {
+.header .header__logo {
   padding-right: 20px;
 }
 
@@ -795,13 +824,13 @@ template {
   min-height: 108px;
 }
 
-.footer__content {
+.footer .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__logo {
+.footer .footer__logo {
   margin-right: 276px;
 }
 
@@ -828,10 +857,8 @@ template {
 }
 
 .navigation a {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
 }
@@ -853,7 +880,7 @@ template {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
-.top-screen__grid {
+.top-screen .top-screen__grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -899,10 +926,8 @@ template {
 }
 
 .top-screen-socials a {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -938,7 +963,6 @@ template {
 
 .top-screen-text a {
   justify-self: flex-start;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -968,10 +992,8 @@ template {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   color: #ffffff;
   text-align: right;
   max-width: 114px;
@@ -1022,20 +1044,6 @@ template {
   box-shadow: inset 0 0 0 4px #ffffff;
 }
 
-.section-title h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 49px;
-  line-height: 49px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: #102654;
-  margin: 0;
-}
-
-.section-title--form h2 {
-  color: #ffffff;
-}
-
 .presentation__grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1054,25 +1062,21 @@ template {
 .presentation-text span {
   display: inline-block;
   vertical-align: baseline;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
-  font-weight: 400;
   color: #102654;
   margin-bottom: 39px;
 }
 
 .presentation-text p {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
   letter-spacing: -0.2px;
   color: #102654;
   margin: 0;
 }
 
-.presentation-text__description + .presentation-text__description {
+.presentation-text .presentation-text__description + .presentation-text__description {
   margin-top: 6px;
 }
 
@@ -1223,10 +1227,8 @@ template {
 
 .subscription-tabs__button {
   position: relative;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
   color: rgba(16, 38, 84, 0.5);
   padding: 0;
 }
@@ -1271,15 +1273,13 @@ template {
   border: solid 7px #ffffff;
 }
 
-.subscription-card dd,
-.subscription-card dt {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+.subscription-card p,
+.subscription-card h3 {
   text-align: center;
-  margin: 0;
   padding: 0;
 }
 
-.subscription-card dt {
+.subscription-card h3 {
   font-size: 26px;
   line-height: 40px;
   font-weight: 700;
@@ -1287,14 +1287,14 @@ template {
   margin-bottom: 5px;
 }
 
-.subscription-card dd {
+.subscription-card p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #495a7d;
 }
 
-.subscription-card__currency {
+.subscription-card .subscription-card__currency {
   display: inline-block;
   vertical-align: baseline;
   text-align: center;
@@ -1305,7 +1305,6 @@ template {
 
 .subscription-card span {
   position: relative;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 60px;
   line-height: 90px;
   font-weight: 700;
@@ -1342,7 +1341,6 @@ template {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -1371,18 +1369,6 @@ template {
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
-}
-
-.advantages-card.advantages-card--experience-indent dl {
-  -webkit-column-gap: 32px;
-  -moz-column-gap: 32px;
-  column-gap: 32px;
-}
-
-.subscription-card__description-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .tabs-content__cards-list {
@@ -1426,73 +1412,6 @@ template {
   flex-grow: 1;
 }
 
-.competition-date {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.competition-date__item {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: -webkit-min-content -webkit-min-content;
-  -ms-grid-columns: min-content min-content;
-  grid-template-columns: -webkit-min-content -webkit-min-content;
-  grid-template-columns: min-content min-content;
-}
-
-.competition-date dt,
-.competition-date dd {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #ffffff;
-  margin: 0;
-}
-
-.competition-date dt {
-  display: inline-block;
-  vertical-align: baseline;
-  position: relative;
-  grid-column: 1 / -1;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  padding-bottom: 5px;
-}
-
-.competition-date dt::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  margin-top: 5px;
-  background: #ffffff;
-}
-
-.competition-date .competition-date__accent {
-  font-size: 40px;
-  line-height: 60px;
-  font-weight: 700;
-  margin-top: -7px;
-}
-
-.competition-date__month-year {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  padding-top: 6px;
-  padding-left: 7px;
-  padding-right: 1px;
-}
-
-.competition-date__item + .competition-date__item {
-  margin-top: 10px;
-}
-
 .competition-text {
   display: -ms-grid;
   display: grid;
@@ -1519,7 +1438,6 @@ template {
 
 .competition-text p {
   grid-column: 1 / -1;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
@@ -1530,7 +1448,6 @@ template {
 .competition-text a {
   display: block;
   grid-column: 1 / -1;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -1553,6 +1470,72 @@ template {
 
 .competition-text__date-list {
   padding-left: 50px;
+}
+
+.competition-date {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.competition-date .competition-date__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content -webkit-min-content;
+  -ms-grid-columns: min-content min-content;
+  grid-template-columns: -webkit-min-content -webkit-min-content;
+  grid-template-columns: min-content min-content;
+}
+
+.competition-date h3,
+.competition-date span,
+.competition-date p {
+  color: #ffffff;
+}
+
+.competition-date h3 {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  grid-column: 1 / -1;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.competition-date h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin-top: 5px;
+  background: #ffffff;
+}
+
+.competition-date span {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-top: -7px;
+}
+
+.competition-date p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  padding-top: 6px;
+  padding-left: 7px;
+  padding-right: 1px;
+}
+
+.competition-date__item + .competition-date__item {
+  margin-top: 10px;
 }
 
 .coaches {
@@ -1578,7 +1561,7 @@ template {
   padding: 0 56px;
 }
 
-.coaches-slider__slide {
+.coaches-slider .coaches-slider__slide {
   min-width: 0;
   width: 260px;
   height: 294px;
@@ -1613,44 +1596,18 @@ template {
   z-index: 0;
 }
 
-.coaches-card p,
-.coaches-card dd,
-.coaches-card dt {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #ffffff;
-}
-
 .coaches-card p {
   position: relative;
   display: inline-block;
   vertical-align: baseline;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #ffffff;
   width: 100%;
   z-index: 1;
   margin: 0;
   text-align: center;
-}
-
-.coaches-card dl {
-  margin: 0 0 32px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.coaches-card dt,
-.coaches-card p {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.coaches-card dd {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: center;
-  margin: -3px 0 0;
 }
 
 .coaches-card ul {
@@ -1661,7 +1618,6 @@ template {
 
 .coaches-card li {
   position: relative;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -1681,7 +1637,7 @@ template {
   background: #ffffff;
 }
 
-.coaches-card__info {
+.coaches-card .coaches-card__info {
   position: absolute;
   z-index: -1;
 }
@@ -1709,10 +1665,6 @@ template {
   scrollbar-color: rgba(16, 38, 84, 0.89);
 }
 
-.coaches-card:hover .coaches-card__info dd {
-  color: #b6bdcc;
-}
-
 .coaches-card:hover .coaches-card__info::-webkit-scrollbar {
   width: 3px;
 }
@@ -1724,6 +1676,34 @@ template {
 .coaches-card:hover .coaches-card__info::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: #d10a42;
+}
+
+.coaches-card__title h3 {
+  margin: 0 37px 0 0;
+}
+
+.coaches-card__title span {
+  margin: -3px 36px 32px 0;
+}
+
+.coaches-card-title h3,
+.coaches-card-title span {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+}
+
+.coaches-card-title h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.coaches-card-title span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #b6bdcc;
 }
 
 .advantages {
@@ -1756,6 +1736,12 @@ template {
 
 .advantages__main-item {
   height: 100%;
+}
+
+.advantages-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .advantages-card dl {
@@ -1800,7 +1786,6 @@ template {
 .advantages-card p {
   display: inline-block;
   vertical-align: baseline;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 71px;
   line-height: 106px;
   font-weight: 700;
@@ -1867,6 +1852,47 @@ template {
   font-weight: 400;
 }
 
+.advantages-card.advantages-card--experience-indent dl {
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+}
+
+.advantages-card-definition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.advantages-card-definition p {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 71px;
+  line-height: 106px;
+  font-weight: 700;
+  color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: -28px;
+}
+
+.advantages-card-definition span {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -21px;
+  padding-left: 1px;
+}
+
 .promo {
   padding-top: 119px;
   padding-bottom: 60px;
@@ -1927,14 +1953,14 @@ template {
   margin-bottom: -25px;
 }
 
-.promo-main__price {
+.promo-main .promo-main__price {
   font-size: 70px;
   line-height: 109px;
   font-weight: 700;
   margin: 0;
 }
 
-.promo-main__description {
+.promo-main .promo-main__description {
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
@@ -2035,7 +2061,7 @@ template {
   margin: 0 auto;
 }
 
-.reviews-carousel__slider {
+.reviews-carousel .reviews-carousel__slider {
   -webkit-box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 }
@@ -2146,20 +2172,20 @@ template {
   box-shadow: inset 0 1px 0 0 #74819c;
 }
 
-.connection__wrapper {
+.connection .connection__wrapper {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.connection__container {
+.connection .connection__container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 69px;
   max-width: 600px;
 }
 
-.connection__container--contacts {
+.connection .connection__container--contacts {
   padding-top: 70px;
   padding-left: 120px;
 }
@@ -2172,7 +2198,7 @@ template {
   margin-bottom: 41px;
 }
 
-.free-training__inputs {
+.free-training .free-training__inputs {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -2192,42 +2218,32 @@ template {
 }
 
 .free-training input::-webkit-input-placeholder {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 }
 
 .free-training input::-moz-placeholder {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 }
 
 .free-training input:-ms-input-placeholder {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 }
 
 .free-training input::-ms-input-placeholder {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 }
 
 .free-training input::placeholder {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 }
 
@@ -2236,7 +2252,6 @@ template {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: baseline;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -2253,7 +2268,7 @@ template {
   margin-left: 1px;
 }
 
-.contacts__container {
+.contacts .contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2299,7 +2314,7 @@ template {
   padding-left: 60px;
 }
 
-.contacts__item {
+.contacts .contacts__item {
   margin-bottom: 19px;
 }
 
@@ -2331,7 +2346,7 @@ template {
 }
 
 @media (min-width: 768px) {
-  .navigation__item--schedule {
+  .navigation .navigation__item--schedule {
     padding-left: 2px;
   }
 
@@ -2389,6 +2404,10 @@ template {
     grid-column: 1 / -1;
   }
 
+  .advantages-card-definition p {
+    margin-top: -47px;
+  }
+
   .promo-main {
     margin-right: 40px;
   }
@@ -2414,7 +2433,7 @@ template {
 }
 
 @media (min-width: 1200px) {
-  .footer__navigation + .footer__navigation {
+  .footer .footer__navigation + .footer__navigation {
     margin-left: 40px;
   }
 
@@ -2476,11 +2495,15 @@ template {
     padding-bottom: 58px;
   }
 
-  .connection__wrapper {
+  .advantages-card-definition p {
+    margin-top: -57px;
+  }
+
+  .connection .connection__wrapper {
     padding-bottom: 44px;
   }
 
-  .connection__container--align-right {
+  .connection .connection__container--align-right {
     padding-left: 20px;
     margin-left: auto;
   }
@@ -2576,28 +2599,6 @@ template {
     height: 100%;
   }
 
-  .competition-date dt {
-    font-size: 12px;
-    line-height: 18px;
-    padding-bottom: 2px;
-  }
-
-  .competition-date .competition-date__accent {
-    font-size: 24px;
-    line-height: 36px;
-    margin-top: -3px;
-  }
-
-  .competition-date__month-year {
-    font-size: 10px;
-    line-height: 12px;
-    padding: 3px 1px 0 3.5px;
-  }
-
-  .competition-date__item + .competition-date__item {
-    margin: 0;
-  }
-
   .competition-text h2 {
     font-size: 52px;
     line-height: 52px;
@@ -2622,6 +2623,28 @@ template {
     padding: 15px 10px 10px;
   }
 
+  .competition-date h3 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 2px;
+  }
+
+  .competition-date span {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: -3px;
+  }
+
+  .competition-date p {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 3px 1px 0 3.5px;
+  }
+
+  .competition-date__item + .competition-date__item {
+    margin: 0;
+  }
+
   .coaches h2 {
     padding: 0;
     margin-bottom: 20px;
@@ -2643,6 +2666,11 @@ template {
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 12px;
+  }
+
+  .advantages-card-definition p {
+    font-size: 58px;
+    line-height: 87px;
   }
 
   .promo__content {
@@ -2669,7 +2697,7 @@ template {
     grid-template-columns: 1fr;
   }
 
-  .free-training__inputs {
+  .free-training .free-training__inputs {
     max-width: initial;
     width: 100%;
     gap: 35px;
@@ -2684,7 +2712,7 @@ template {
     max-width: initial;
   }
 
-  .contacts__container {
+  .contacts .contacts__container {
     padding-left: 0;
     padding-right: 14px;
     padding-top: 33px;
@@ -2737,6 +2765,11 @@ template {
     padding: 0;
   }
 
+  .page h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
   .header {
     padding: 18px 15px;
   }
@@ -2754,20 +2787,20 @@ template {
     line-height: 20px;
   }
 
-  .footer__content {
+  .footer .footer__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
-  .footer__logo {
+  .footer .footer__logo {
     width: 67px;
     margin-right: 0;
     margin-bottom: 25px;
   }
 
-  .footer__navigation + .footer__navigation {
+  .footer .footer__navigation + .footer__navigation {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
@@ -2776,7 +2809,7 @@ template {
     padding-left: 15px;
   }
 
-  .footer__navigation li + li {
+  .footer .footer__navigation li + li {
     margin-top: 21px;
   }
 
@@ -2843,11 +2876,6 @@ template {
   .top-screen-text {
     margin: 0;
     padding: 91px 0 45px;
-  }
-
-  .section-title h2 {
-    font-size: 32px;
-    line-height: 32px;
   }
 
   .presentation {
@@ -2922,13 +2950,13 @@ template {
     padding-top: 37px;
   }
 
-  .subscription-card dt {
+  .subscription-card h3 {
     font-size: 22px;
     line-height: 24px;
     margin-bottom: 9px;
   }
 
-  .subscription-card__currency {
+  .subscription-card .subscription-card__currency {
     padding-top: 54px;
     margin-bottom: 21px;
   }
@@ -3002,7 +3030,7 @@ template {
     padding-bottom: 50px;
   }
 
-  .coaches-slider__slide {
+  .coaches-slider .coaches-slider__slide {
     width: 226px;
     height: 274px;
   }
@@ -3012,11 +3040,6 @@ template {
     padding: 0 20px;
   }
 
-  .coaches-card:hover .coaches-card__info dl {
-    margin: 0 0 33px;
-    padding-left: 5px;
-  }
-
   .coaches-card:hover .coaches-card__info {
     padding: 41px 20px 20px 35px;
   }
@@ -3024,6 +3047,10 @@ template {
   .coaches-card {
     width: 226px;
     height: 274px;
+  }
+
+  .coaches-card__title {
+    padding-left: 5px;
   }
 
   .advantages h2 {
@@ -3134,6 +3161,10 @@ template {
     margin-bottom: 4px;
   }
 
+  .advantages-card-definition span {
+    text-align: center;
+  }
+
   .promo {
     padding-top: 69px;
     padding-bottom: 69px;
@@ -3158,7 +3189,7 @@ template {
     text-align: center;
   }
 
-  .promo-main__description {
+  .promo-main .promo-main__description {
     margin-top: -5px;
     margin-bottom: 31px;
   }
@@ -3235,19 +3266,19 @@ template {
     padding: 0;
   }
 
-  .connection__wrapper--form-indent {
+  .connection .connection__wrapper--form-indent {
     padding: 0 15px;
   }
 
-  .connection__wrapper--contacts-indent {
+  .connection .connection__wrapper--contacts-indent {
     padding: 69px 15px 43px;
   }
 
-  .connection__container--contacts {
+  .connection .connection__container--contacts {
     padding: 0;
   }
 
-  .connection__container {
+  .connection .connection__container {
     max-width: initial;
     width: 100%;
   }
@@ -3256,7 +3287,7 @@ template {
     margin-bottom: 37px;
   }
 
-  .free-training__inputs {
+  .free-training .free-training__inputs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3283,7 +3314,7 @@ template {
     min-height: 386px;
   }
 
-  .contacts__container {
+  .contacts .contacts__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3321,6 +3352,11 @@ template {
     padding: 0 39px 0 45px;
   }
 
+  .page h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
   .header {
     padding: 40px 45px 25px;
     margin-bottom: -89px;
@@ -3344,12 +3380,12 @@ template {
     letter-spacing: 0.02em;
   }
 
-  .footer__logo {
+  .footer .footer__logo {
     margin-right: 64px;
     width: 80px;
   }
 
-  .footer__navigation + .footer__navigation {
+  .footer .footer__navigation + .footer__navigation {
     margin-left: 30px;
   }
 
@@ -3358,7 +3394,7 @@ template {
     padding-bottom: 44px;
   }
 
-  .footer__navigation {
+  .footer .footer__navigation {
     padding-top: 1px;
   }
 
@@ -3408,11 +3444,6 @@ template {
     font-size: 86px;
     line-height: 86px;
     max-width: 260px;
-  }
-
-  .section-title h2 {
-    font-size: 42px;
-    line-height: 42px;
   }
 
   .presentation {
@@ -3496,7 +3527,7 @@ template {
     padding-top: 45px;
   }
 
-  .subscription-card__currency {
+  .subscription-card .subscription-card__currency {
     margin-bottom: 26px;
   }
 
@@ -3529,7 +3560,7 @@ template {
     padding-bottom: 80px;
   }
 
-  .coaches-slider__slide {
+  .coaches-slider .coaches-slider__slide {
     width: 268px;
     height: 294px;
   }
@@ -3667,15 +3698,15 @@ template {
     padding: 62px 65px 48px;
   }
 
-  .connection__wrapper--form-indent {
+  .connection .connection__wrapper--form-indent {
     padding-bottom: 44px;
   }
 
-  .connection__wrapper--contacts-indent {
+  .connection .connection__wrapper--contacts-indent {
     padding-bottom: 26px;
   }
 
-  .connection__container {
+  .connection .connection__container {
     margin: 0 auto;
     padding: 69px 82px 17px 49px;
   }
@@ -3684,7 +3715,7 @@ template {
     margin-bottom: 35px;
   }
 
-  .free-training__inputs {
+  .free-training .free-training__inputs {
     gap: 60px;
   }
 }
