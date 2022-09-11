@@ -27,6 +27,10 @@
     line-height: 22px;
     font-weight: 400;
     padding-right: 38px;
+
+    @media #{$narrow-vp} {
+      padding-right: 0;
+    }
   }
 
   a {
@@ -56,4 +60,8 @@
 
 .promo-card__container {
   flex-grow: 1;
+
+  @media #{$narrow-vp} {
+    text-align: center;
+  }
 }

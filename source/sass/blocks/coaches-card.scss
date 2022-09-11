@@ -30,6 +30,10 @@
     z-index: 1;
     margin: 0;
     text-align: center;
+
+    @media #{$middle-vp} {
+      padding-left: 8px;
+    }
   }
 
   ul {
@@ -96,7 +100,7 @@
       }
 
       @media #{$narrow-vp} {
-        padding: 41px 20px 20px 35px;
+        padding: 42px 20px 20px 35px;
       }
     }
 
@@ -117,13 +121,26 @@
 .coaches-card__title {
   h3 {
     margin: 0 37px 0 0;
+
+    @media #{$middle-vp} {
+      margin: 0 44px 0 -3px;
+    }
+
+    @media #{$narrow-vp} {
+      margin: 0 17px 0 0;
+    }
   }
 
   span {
     margin: -3px 36px 32px 0;
-  }
 
-  @media #{$narrow-vp} {
-    padding-left: 5px;
+    @media #{$middle-vp} {
+      margin: -3px 45px 32px 0;
+    }
+
+    @media #{$narrow-vp} {
+      margin: -3px 0 32px 0;
+      padding-right: 14px;
+    }
   }
 }

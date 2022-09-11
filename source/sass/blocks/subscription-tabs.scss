@@ -16,6 +16,10 @@
   @media #{$middle-vp} {
     max-width: 331px;
   }
+
+  @media #{$narrow-vp} {
+    padding: 0 0 2px;
+  }
 }
 
 .subscription-tabs__controls-item {
@@ -30,6 +34,10 @@
     @media #{$middle-vp} {
       padding-left: 3px;
     }
+  }
+
+  @media #{$narrow-vp} {
+    padding: 0 1px;
   }
 }
 
@@ -55,7 +63,8 @@
 
       @media #{$narrow-vp} {
         left: 0;
-        width: 100%;
+        bottom: -14px;
+        width: calc(100% + 5px);
       }
     }
   }

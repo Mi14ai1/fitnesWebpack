@@ -73,7 +73,7 @@
     }
 
     @media #{$narrow-vp} {
-      transform: translate(-20px, -93px);
+      transform: translate(-42px, -93px);
     }
   }
 
@@ -138,10 +138,5 @@
 
       box-shadow: 0 0 0 4px $color-default-white;
     }
-  }
-
-  @media #{$narrow-vp} {
-    margin: 0;
-    padding: 91px 0 45px;
   }
 }

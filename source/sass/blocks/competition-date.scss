@@ -32,8 +32,12 @@
       bottom: 0;
       width: 100%;
       height: 1px;
-      margin-top: 5px;
+      //margin-top: 5px;
       background: $color-default-white;
+
+      @media #{$narrow-vp} {
+        bottom: -1px;
+      }
     }
 
 
@@ -41,6 +45,16 @@
       font-size: 12px;
       line-height: 18px;
       padding-bottom: 2px;
+    }
+
+    @media #{$middle-vp} {
+      padding-left: 1px;
+    }
+
+    @media #{$narrow-vp} {
+      font-size: 12px;
+      line-height: 18px;
+      padding-bottom: 1px;
     }
   }
 }
@@ -55,6 +69,10 @@
     font-size: 24px;
     line-height: 36px;
     margin-top: -3px;
+  }
+
+  @media #{$middle-vp} {
+    margin-left: 1px;
   }
 }
 
@@ -74,6 +92,17 @@
     padding: 3px 1px 0 3px;
     margin: 0;
   }
+
+  @media #{$middle-vp} {
+    padding: 3px 0 0 5px;
+  }
+
+  @media #{$narrow-vp} {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 3px 1px 0 3px;
+    margin: 0;
+  }
 }
 
 .competition-date__item + .competition-date__item {
@@ -81,5 +110,9 @@
 
   @media #{$not-wide-vp} {
     margin: 0;
+  }
+
+  @media #{$narrow-vp} {
+    margin-top: 1px;
   }
 }

@@ -30,6 +30,10 @@
     line-height: 109px;
     font-weight: 700;
     margin: 0;
+
+    @media #{$narrow-vp} {
+      display: block;
+    }
   }
 
   p {

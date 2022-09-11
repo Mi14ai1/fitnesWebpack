@@ -28,6 +28,10 @@
     @media #{$not-narrow-vp} {
       transform: translateY(-8px);
     }
+
+    @media #{$narrow-vp} {
+      max-height: 265px;
+    }
   }
 
   h3,

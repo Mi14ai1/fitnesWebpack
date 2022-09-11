@@ -812,6 +812,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .footer .footer__logo {
@@ -1060,7 +1063,7 @@ template {
   flex-direction: column;
 }
 
-.logo img {
+.logo svg {
   width: 100%;
 }
 
@@ -1469,7 +1472,7 @@ template {
   font-size: 90px;
   line-height: 90px;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 2.7px;
   color: #ffffff;
   padding-top: 2px;
   margin: 0 50px 0 0;
@@ -1556,7 +1559,6 @@ template {
   bottom: 0;
   width: 100%;
   height: 1px;
-  margin-top: 5px;
   background: #ffffff;
 }
 
@@ -1586,12 +1588,12 @@ template {
 
 .coaches {
   padding-top: 59px;
-  padding-bottom: 100px;
+  padding-bottom: 84px;
 }
 
 .coaches h2 {
   padding-left: 58px;
-  margin-bottom: 31px;
+  margin-bottom: 16px;
 }
 
 .coaches-slider {
@@ -1614,7 +1616,7 @@ template {
 }
 
 .coaches-slider__swiper {
-  padding: 20px 0;
+  padding: 35px 0;
 }
 
 .coaches-card {
@@ -1784,7 +1786,7 @@ template {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 28px;
+  margin-top: 29px;
 }
 
 .advantages-card {
@@ -1907,7 +1909,7 @@ template {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding-top: 51px;
+  padding-top: 52px;
 }
 
 .promo__cards-container {
@@ -2241,6 +2243,17 @@ template {
   color: #ffffff;
 }
 
+.free-training input:hover {
+  -webkit-box-shadow: 0 2px 0 0 #74819c;
+  box-shadow: 0 2px 0 0 #74819c;
+}
+
+.free-training input:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 2px 0 0 #74819c;
+  box-shadow: 0 2px 0 0 #74819c;
+}
+
 .free-training input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 16px;
@@ -2424,11 +2437,6 @@ template {
     grid-area: 1 / 2 / 3 / 3;
   }
 
-  .advantages-card .advantages-card__definition {
-    -ms-grid-column: 1;
-    grid-column: 1 / 1;
-  }
-
   .promo-main {
     margin-right: 40px;
   }
@@ -2458,6 +2466,11 @@ template {
     margin-left: 40px;
   }
 
+  .footer .footer__navigation {
+    padding-top: 1px;
+    margin-left: -2px;
+  }
+
   .top-screen img {
     margin-top: -33px;
   }
@@ -2468,7 +2481,7 @@ template {
     margin-right: -1px;
   }
 
-  .header__logo img {
+  .header__logo svg {
     margin-top: 0;
   }
 
@@ -2666,7 +2679,7 @@ template {
 
   .coaches h2 {
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-align: center;
   }
 
@@ -2803,7 +2816,7 @@ template {
 
   .footer .footer__logo {
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 0;
     width: 67px;
     margin-right: 0;
@@ -2830,14 +2843,19 @@ template {
 
   .footer__social {
     margin-left: 0;
-    margin-top: 34px;
+    margin-top: 17px;
   }
 
   .navigation {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
-    width: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-column-gap: 76px;
+    -moz-column-gap: 76px;
+    column-gap: 76px;
   }
 
   .navigation .navigation__item:nth-of-type(2n+4),
@@ -2845,6 +2863,7 @@ template {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
+    margin: 0 0 20px;
   }
 
   .navigation .navigation__item:nth-of-type(2n+7),
@@ -2853,6 +2872,7 @@ template {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+    margin: 0 0 20px;
   }
 
   .navigation a {
@@ -2868,6 +2888,11 @@ template {
     padding-bottom: 37px;
   }
 
+  .top-screen__text {
+    margin: 0;
+    padding: 56px 0 45px;
+  }
+
   .top-screen img {
     display: none;
   }
@@ -2879,9 +2904,9 @@ template {
   }
 
   .top-screen-text p {
-    -webkit-transform: translate(-20px, -93px);
-    -ms-transform: translate(-20px, -93px);
-    transform: translate(-20px, -93px);
+    -webkit-transform: translate(-42px, -93px);
+    -ms-transform: translate(-42px, -93px);
+    transform: translate(-42px, -93px);
   }
 
   .top-screen-text h2,
@@ -2901,16 +2926,11 @@ template {
     box-shadow: 0 0 0 4px #ffffff;
   }
 
-  .top-screen-text {
-    margin: 0;
-    padding: 91px 0 45px;
-  }
-
   .header {
     padding: 18px 15px;
   }
 
-  .header__logo img {
+  .header__logo svg {
     width: 67px;
   }
 
@@ -2976,9 +2996,18 @@ template {
     display: none;
   }
 
+  .subscription-tabs__controls-list {
+    padding: 0 0 2px;
+  }
+
+  .subscription-tabs__controls-item {
+    padding: 0 1px;
+  }
+
   .subscription-tabs__button--active::after {
     left: 0;
-    width: 100%;
+    bottom: -14px;
+    width: calc(100% + 5px);
   }
 
   .subscription-tabs__button {
@@ -2997,8 +3026,8 @@ template {
   }
 
   .subscription-card .subscription-card__currency {
-    padding-top: 54px;
-    margin-bottom: 21px;
+    padding-top: 53px;
+    margin-bottom: 31px;
   }
 
   .subscription-card span::after {
@@ -3012,7 +3041,7 @@ template {
   .subscription-card span {
     font-size: 48px;
     line-height: 72px;
-    padding-left: 6px;
+    padding-left: 3px;
     margin-right: 7px;
   }
 
@@ -3034,7 +3063,7 @@ template {
   }
 
   .competition {
-    padding: 70px 15px;
+    padding: 69px 15px;
   }
 
   .competition__content {
@@ -3051,6 +3080,12 @@ template {
   .competition-text h2 {
     font-size: 52px;
     line-height: 52px;
+    letter-spacing: 1.3px;
+    margin: 0;
+  }
+
+  .competition-text p {
+    margin: -1px 0 21px;
   }
 
   .competition-text a {
@@ -3064,15 +3099,36 @@ template {
   }
 
   .competition-text__date-list {
-    padding-left: 29px;
+    padding-left: 31px;
+  }
+
+  .competition-date h3::after {
+    bottom: -1px;
+  }
+
+  .competition-date h3 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 1px;
+  }
+
+  .competition-date p {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 3px 1px 0 3px;
+    margin: 0;
+  }
+
+  .competition-date__item + .competition-date__item {
+    margin-top: 1px;
   }
 
   .coaches h2 {
-    margin-bottom: 22px;
+    margin-bottom: 7px;
   }
 
   .coaches {
-    padding-bottom: 50px;
+    padding-bottom: 36px;
   }
 
   .coaches-slider .coaches-slider__slide {
@@ -3082,11 +3138,11 @@ template {
 
   .coaches-slider {
     max-width: initial;
-    padding: 0 20px;
+    padding: 0 5px;
   }
 
   .coaches-card:hover .coaches-card__info {
-    padding: 41px 20px 20px 35px;
+    padding: 42px 20px 20px 35px;
   }
 
   .coaches-card {
@@ -3094,17 +3150,22 @@ template {
     height: 274px;
   }
 
-  .coaches-card__title {
-    padding-left: 5px;
+  .coaches-card__title h3 {
+    margin: 0 17px 0 0;
+  }
+
+  .coaches-card__title span {
+    margin: -3px 0 32px 0;
+    padding-right: 14px;
   }
 
   .advantages h2 {
-    margin-bottom: 58px;
+    margin-bottom: 31px;
   }
 
   .advantages {
     padding-top: 69px;
-    padding-bottom: 66px;
+    padding-bottom: 62px;
   }
 
   .advantages__list {
@@ -3131,25 +3192,26 @@ template {
 
   .advantages__main-item + .advantages__item,
   .advantages__item + .advantages__item {
-    margin-top: 51px;
-  }
-
-  .advantages__main-item dl {
-    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .advantages__main-item {
     width: 100%;
-    margin-top: 46px;
+    margin-top: 42px;
   }
 
   .advantages-card .advantages-card__definition {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-area: 1 / 1 / 2 / 2;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+  }
+
+  .advantages-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .advantages-card--main h3 {
@@ -3162,9 +3224,18 @@ template {
   }
 
   .advantages-card--main {
-    padding-top: 38px;
-    padding-bottom: 42px;
-    margin-bottom: 4px;
+    padding: 38px 55px 42px;
+    margin-bottom: 8px;
+  }
+
+  .advantages-card__description--experience {
+    text-align: center;
+    padding: 0 45px;
+  }
+
+  .advantages-card__description {
+    text-align: center;
+    padding: 0 46px;
   }
 
   .advantages-card-definition span {
@@ -3207,9 +3278,17 @@ template {
     text-align: center;
   }
 
+  .promo-main-text span {
+    display: block;
+  }
+
   .promo-main-text p {
     margin-top: -5px;
     margin-bottom: 31px;
+  }
+
+  .promo-card p {
+    padding-right: 0;
   }
 
   .promo-card a {
@@ -3219,6 +3298,10 @@ template {
   .promo-card {
     padding-top: 30px;
     padding-bottom: 41px;
+  }
+
+  .promo-card__container {
+    text-align: center;
   }
 
   .reviews h2 {
@@ -3231,6 +3314,10 @@ template {
 
   .reviews-carousel {
     padding: 0 32px;
+  }
+
+  .review-card .review-card__text {
+    max-height: 265px;
   }
 
   .review-card h3 {
@@ -3287,7 +3374,7 @@ template {
   }
 
   .free-training h2 {
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
 
   .free-training .free-training__inputs {
@@ -3299,11 +3386,11 @@ template {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 
   .free-training label + label {
-    margin-top: 34px;
+    margin-top: 36px;
   }
 
   .free-training button {
@@ -3375,13 +3462,13 @@ template {
     margin-left: 30px;
   }
 
+  .footer .footer__navigation {
+    padding-top: 1px;
+  }
+
   .footer {
     padding-top: 47px;
     padding-bottom: 44px;
-  }
-
-  .footer .footer__navigation {
-    padding-top: 1px;
   }
 
   .footer__social {
@@ -3396,6 +3483,10 @@ template {
     -moz-column-gap: 30px;
     column-gap: 30px;
     max-width: 400px;
+  }
+
+  .social {
+    max-width: 100px;
   }
 
   .top-screen::before {
@@ -3443,9 +3534,8 @@ template {
     padding: 40px 45px 19px;
   }
 
-  .header__logo img {
+  .header__logo svg {
     width: 80px;
-    height: auto;
     margin: 0;
   }
 
@@ -3574,6 +3664,7 @@ template {
   .competition-text h2 {
     font-size: 52px;
     line-height: 52px;
+    letter-spacing: 1.5px;
     margin: 0;
   }
 
@@ -3582,11 +3673,23 @@ template {
   }
 
   .competition-text__date-list {
-    padding-left: 30px;
+    padding-left: 29px;
+  }
+
+  .competition-date h3 {
+    padding-left: 1px;
+  }
+
+  .competition-date span {
+    margin-left: 1px;
+  }
+
+  .competition-date p {
+    padding: 3px 0 0 5px;
   }
 
   .coaches {
-    padding-bottom: 80px;
+    padding-bottom: 65px;
   }
 
   .coaches-slider .coaches-slider__slide {
@@ -3594,8 +3697,20 @@ template {
     height: 294px;
   }
 
+  .coaches-card p {
+    padding-left: 8px;
+  }
+
   .coaches-card {
     width: 268px;
+  }
+
+  .coaches-card__title h3 {
+    margin: 0 44px 0 -3px;
+  }
+
+  .coaches-card__title span {
+    margin: -3px 45px 32px 0;
   }
 
   .advantages h2 {
