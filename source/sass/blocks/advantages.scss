@@ -12,7 +12,7 @@
     }
 
     @media #{$narrow-vp} {
-      margin-bottom: 58px;
+      margin-bottom: 31px;
     }
   }
 
@@ -23,7 +23,7 @@
 
   @media #{$narrow-vp} {
     padding-top: 69px;
-    padding-bottom: 66px;
+    padding-bottom: 62px;
   }
 }
 
@@ -155,19 +155,13 @@
 .advantages__main-item + .advantages__item,
 .advantages__item + .advantages__item {
   @media #{$narrow-vp} {
-    margin-top: 51px;
+    margin-top: 20px;
   }
 }
 
 .advantages__main-item {
   height: fit-content;
-  margin-top: 28px;
-
-  dl {
-    @media #{$narrow-vp} {
-      margin: 0 auto;
-    }
-  }
+  margin-top: 29px;
 
   @media #{$not-narrow-vp} {
     grid-area: 1 / 2 / 3 / 3;
@@ -180,6 +174,6 @@
 
   @media #{$narrow-vp} {
     width: 100%;
-    margin-top: 46px;
+    margin-top: 42px;
   }
 }

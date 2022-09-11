@@ -44,6 +44,11 @@
     padding-right: 30px;
     margin-right: 0;
   }
+
+  @media #{$narrow-vp} {
+    margin: 0;
+    padding: 56px 0 45px;
+  }
 }
 
 .top-screen__title-container {

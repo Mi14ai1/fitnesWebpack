@@ -19,14 +19,13 @@
   }
 }
 
-.header__logo img {
+.header__logo svg {
   @media #{$wide-vp} {
     margin-top: 0;
   }
 
   @media #{$middle-vp} {
     width: 80px;
-    height: auto;
     margin: 0;
   }
 
