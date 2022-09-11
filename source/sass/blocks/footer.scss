@@ -8,13 +8,14 @@
     display: flex;
 
     @media #{$narrow-vp} {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      position: relative;
+      flex-direction: column;
     }
   }
 
   .footer__logo {
-    margin-right: 276px;
+    flex-shrink: 0;
+    margin-right: 278px;
 
     @media #{$middle-vp} {
       margin-right: 64px;
@@ -22,6 +23,9 @@
     }
 
     @media #{$narrow-vp} {
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 67px;
       margin-right: 0;
       margin-bottom: 25px;
@@ -73,10 +77,6 @@
   margin-top: -4px;
   margin-left: auto;
   padding-right: 1px;
-
-  a + a {
-    margin-left: 11px;
-  }
 
   @media #{$middle-vp} {
     margin-top: -2px;

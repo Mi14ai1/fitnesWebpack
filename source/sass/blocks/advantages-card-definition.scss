@@ -15,14 +15,12 @@
   background: $advantages-gradient;
   background-clip: text;
 
-  margin-top: -28px;
-
   @media #{$not-narrow-vp} {
-    margin-top: -47px;
+    //margin-top: -47px;
   }
 
   @media #{$wide-vp} {
-    margin-top: -57px;
+    //margin-top: -57px;
   }
 
   @media #{$not-wide-vp} {
@@ -34,7 +32,7 @@
 .advantages-card-definition span {
   font-size: 14px;
   line-height: 21px;
-  margin-top: -21px;
+  margin-top: -20px;
   padding-left: 1px;
 
   @media #{$narrow-vp} {

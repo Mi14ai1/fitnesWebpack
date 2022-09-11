@@ -41,6 +41,8 @@
 }
 
 .competition__text {
+  max-width: 500px;
+  width: 100%;
   flex-grow: 1;
 
   @media #{$middle-vp} {

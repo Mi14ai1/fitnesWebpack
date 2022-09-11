@@ -1,4 +1,8 @@
 .page {
+  div {
+    box-sizing: border-box;
+  }
+
   h3,
   p,
   li,
@@ -36,6 +40,20 @@
       font-size: 32px;
       line-height: 32px;
     }
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+
+  a:focus-visible {
+    outline: none;
+    border-radius: 6px;
+    background: $color-blue-zodiac-transparent;
   }
 }
 

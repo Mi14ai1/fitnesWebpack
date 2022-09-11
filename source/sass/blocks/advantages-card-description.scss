@@ -3,12 +3,24 @@
   line-height: 33px;
   color: $color-blue-zodiac;
   font-weight: 700;
+  margin-bottom: 5px;
+
+  @media #{$not-wide-vp} {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
 }
 
-.advantages-card-description p {
+.advantages-card-description > p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
   color: $color-blue-zodiac;
-  margin: 0;
+  margin-top: 0;
+
+  @media #{$not-wide-vp} {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

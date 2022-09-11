@@ -59,17 +59,20 @@
 }
 
 .competition-date p {
+  grid-column: 2 / 3;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   padding-top: 6px;
   padding-left: 7px;
   padding-right: 1px;
+  margin: 0;
 
   @media #{$not-wide-vp} {
     font-size: 10px;
     line-height: 12px;
-    padding: 3px 1px 0 3.5px;
+    padding: 3px 1px 0 3px;
+    margin: 0;
   }
 }
 
