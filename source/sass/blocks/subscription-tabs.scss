@@ -25,14 +25,18 @@
   &:last-child {
     justify-self: flex-end;
   }
+
+  &--left-indent {
+    @media #{$middle-vp} {
+      padding-left: 3px;
+    }
+  }
 }
 
 .subscription-tabs__button {
   position: relative;
-  font-family: $ff-roboto-condensed;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
   color: $tab-button-color;
 
   padding: 0;

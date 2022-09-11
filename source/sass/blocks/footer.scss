@@ -4,17 +4,18 @@
   background: #030a1a;
   min-height: 108px;
 
-  &__content {
+  .footer__content {
     display: flex;
 
     @media #{$narrow-vp} {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      position: relative;
+      flex-direction: column;
     }
   }
 
-  &__logo {
-    margin-right: 276px;
+  .footer__logo {
+    flex-shrink: 0;
+    margin-right: 278px;
 
     @media #{$middle-vp} {
       margin-right: 64px;
@@ -22,13 +23,16 @@
     }
 
     @media #{$narrow-vp} {
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 67px;
       margin-right: 0;
       margin-bottom: 25px;
     }
   }
 
-  &__navigation + &__navigation {
+  .footer__navigation + .footer__navigation {
     @media #{$wide-vp} {
       margin-left: $navigation-indent;
     }
@@ -43,7 +47,7 @@
     }
   }
 
-  &__navigation {
+  .footer__navigation {
     li + li {
       @media #{$narrow-vp} {
         margin-top: 21px;
@@ -55,7 +59,7 @@
     padding-top: 47px;
     padding-bottom: 44px;
 
-    &__navigation {
+    .footer__navigation {
       padding-top: 1px;
     }
   }
@@ -73,10 +77,6 @@
   margin-top: -4px;
   margin-left: auto;
   padding-right: 1px;
-
-  a + a {
-    margin-left: 11px;
-  }
 
   @media #{$middle-vp} {
     margin-top: -2px;
