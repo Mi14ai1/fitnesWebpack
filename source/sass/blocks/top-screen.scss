@@ -4,6 +4,7 @@
 
   .top-screen__grid {
     display: flex;
+    justify-content: flex-end;
   }
 
   &::before {
